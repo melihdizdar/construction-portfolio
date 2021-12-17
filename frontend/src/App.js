@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/NavBar/Navbar";
 import TopBar from "./components/TopBar/TopBar";
 import HomeScreen from "./screens/HomeScreen";
 
@@ -7,6 +8,7 @@ function App() {
     <div>
         <BrowserRouter>
             <TopBar/>
+            <Navbar/>
             <main>
                 <Routes>
                     <Route path="/" element={<HomeScreen/>}/>
