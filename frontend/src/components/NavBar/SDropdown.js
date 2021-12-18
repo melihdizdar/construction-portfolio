@@ -3,7 +3,7 @@ import { MenuItems } from './MenuItems';
 import './Dropdown.css';
 import { Link } from 'react-router-dom';
 
-function Dropdown() {
+function SDropdown() {
 const [click, setClick] = useState(false);
 const handleClick = () => setClick(!click);
 
@@ -31,4 +31,4 @@ return (
 );
 }
 
-export default Dropdown;
+export default SDropdown;
