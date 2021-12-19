@@ -50,7 +50,11 @@ img:hover{
   font-weight: normal;
 }
 .nav-links:hover {
-  color: #ff3838;
+  color: white;
+  height: 50px;
+  width: 100%;
+  background-color: #ff3838;
+  transition: all 0.4s ease;
 }
 .nav-item {
   line-height: 40px;
@@ -68,12 +72,15 @@ img:hover{
 }
 @media screen and (max-width: 600px) {
   .fa-bars {
-    color: #0E0E0E;
+    color: #ff3838;
     font-size: 3rem;
+    display: block;
+    padding-right: 2rem;
   }
   .fa-times {
-    color: #0E0E0E;
+    color: #ff3838;
     font-size: 3rem;
+    padding-right: 2rem;
   }
   .nav-menu {
     display: flex;

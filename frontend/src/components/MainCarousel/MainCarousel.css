@@ -7,31 +7,32 @@
   z-index: 0;
 }
 
-.carousel .slide {
-  height: 700px;
+.carousel-root .carousel .slide {
+  height: 768px;
 }
 
-.carousel .slide img {
+.carousel-root .carousel .slide img {
   width: 100%;
+  height: 768px;
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
 }
 
-.myCarousel {
+.carousel-root .carousel .slide .myCarousel {
   margin-top: -50%;
-  width: 75%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 6%;
   padding-bottom: 8%;
   padding-left: 5%;
   padding-right: 5%;
-  height: 286px;
+  height: 900px;
   font-family: 'Roboto', sans-serif;
   position: relative;
 }
 
-.myCarousel .lineStage {
+.carousel-root .carousel .slide .myCarousel .lineStage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,18 +45,12 @@
   margin-bottom: 5%;
 }
 
-.myCarousel .lineStage .line {
+.carousel-root .carousel .slide .myCarousel .lineStage .line {
   width: 25%;
   border-bottom: 4px solid #ff3838;
 }
 
-.carousel .control-dots {
-  padding-left: 5px;
-  outline: 0;
-  bottom: 5%;
-}
-
-.myCarousel h3 {
+.carousel-root .carousel .slide .myCarousel h3 {
   color: white;
   font-weight: 100;
   letter-spacing: 0.2px;
@@ -66,7 +61,7 @@
   margin-bottom: 2%;
 }
 
-.myCarousel p {
+.carousel-root .carousel .slide .myCarousel p {
   font-weight: 100;
   line-height: 29px;
   color: white;
@@ -75,7 +70,90 @@
   max-height: 67px;
 }
 
-.leftarrow {
+.carousel-root .carousel .slide .myCarousel .carouselCardStage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+.carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3d3d3d;
+  color: white;
+  margin: 0 1rem;
+  height: 100px;
+  border-bottom: 5px solid #ff3838;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  cursor: default;
+}
+
+.carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard .left {
+  -webkit-box-flex: 80%;
+      -ms-flex: 80%;
+          flex: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10%;
+}
+
+.carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard .left .topText {
+  font-size: 1.5rem;
+}
+
+.carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard .left .bottomText {
+  font-size: 0.9rem;
+}
+
+.carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard .right {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+  margin-right: 10%;
+  font-size: 2rem;
+}
+
+.carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard:hover {
+  background-color: #ff3838;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.carousel-root .carousel .control-dots {
+  padding-left: 5px;
+  outline: 0;
+  bottom: 30%;
+}
+
+.carousel-root .carousel .leftarrow {
   position: absolute;
   z-index: 2;
   top: 45%;
@@ -89,11 +167,11 @@
   color: #ff3838;
 }
 
-.leftarrow:hover {
+.carousel-root .carousel .leftarrow:hover {
   opacity: 0.8;
 }
 
-.rightarrow {
+.carousel-root .carousel .rightarrow {
   position: absolute;
   z-index: 2;
   top: 45%;
@@ -107,62 +185,202 @@
   color: #ff3838;
 }
 
-.rightarrow:hover {
+.carousel-root .carousel .rightarrow:hover {
   opacity: 0.8;
 }
 
-.indicators {
-  background: none;
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  margin: 0 5px;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
-  border-radius: 50%;
-  border: 3px solid #ff3838;
-}
-
-.indicators:hover {
-  background: #ff3838;
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  margin: 0 5px;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
-  border-radius: 50%;
-  border: 3px solid #ff3838;
-}
-
-.indicators-active {
-  background: #ff3838;
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  margin: 0 5px;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
-  border-radius: 50%;
-  border: 3px solid #ff3838;
-}
-
-@media only screen and (max-width: 934px) {
-  .carousel-root {
-    outline: 0;
+@media screen and (max-width: 1920px) {
+  .carousel-root .carousel .slide {
+    height: 1080px;
   }
-  .myCarousel {
-    background: #fafafa;
-    margin-top: -9%;
-    width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 8%;
-    padding-bottom: 12.5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    border: 1px solid #ddd;
-    height: 269px;
+  .carousel-root .carousel .slide img {
+    height: 1080px;
+  }
+  .carousel-root .carousel .slide .myCarousel {
+    margin-top: -45%;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .carousel-root .carousel .slide {
+    height: 900px;
+  }
+  .carousel-root .carousel .slide img {
+    height: 900px;
+  }
+  .carousel-root .carousel .slide .myCarousel {
+    margin-top: -45%;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .carousel-root .carousel .slide .myCarousel {
+    margin-top: -50%;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel-root .carousel .slide {
+    height: 768px;
+  }
+  .carousel-root .carousel .slide img {
+    height: 768px;
+  }
+  .carousel-root .carousel .slide .myCarousel {
+    margin-top: -55%;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-root .carousel .slide {
+    height: 1024px;
+  }
+  .carousel-root .carousel .slide img {
+    height: 1024px;
+  }
+  .carousel-root .carousel .slide .myCarousel {
+    margin-top: -100%;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+    width: 33%;
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-root .carousel .slide {
+    height: 800px;
+  }
+  .carousel-root .carousel .slide img {
+    height: 800px;
+  }
+  .carousel-root .carousel .slide .myCarousel {
+    margin-top: -110%;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+    width: 45%;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .carousel-root .carousel .slide {
+    height: 736px;
+  }
+  .carousel-root .carousel .slide img {
+    height: 736px;
+  }
+  .carousel-root .carousel .slide .myCarousel {
+    margin-top: -150%;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+    width: 75%;
+    margin: 1rem;
+  }
+  .carousel-root .carousel .leftarrow {
+    left: 10px;
+    font-size: 1.8rem;
+  }
+  .carousel-root .carousel .rightarrow {
+    right: 10px;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .carousel-root .carousel .slide {
+    height: 812px;
+  }
+  .carousel-root .carousel .slide img {
+    height: 812px;
+  }
+  .carousel-root .carousel .slide .myCarousel {
+    margin-top: -190%;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+    width: 75%;
+    margin: 1rem;
+  }
+  .carousel-root .carousel .leftarrow {
+    left: 10px;
+    font-size: 1.8rem;
+  }
+  .carousel-root .carousel .rightarrow {
+    right: 10px;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .carousel-root .carousel .slide {
+    height: 812px;
+  }
+  .carousel-root .carousel .slide img {
+    height: 812px;
+  }
+  .carousel-root .carousel .slide .myCarousel {
+    margin-top: -225%;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20%;
+  }
+  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+    width: 90%;
+    margin: 0.5rem;
+  }
+  .carousel-root .carousel .leftarrow {
+    left: 5px;
+    font-size: 1.8rem;
+  }
+  .carousel-root .carousel .rightarrow {
+    right: 5px;
+    font-size: 1.8rem;
   }
 }
 /*# sourceMappingURL=MainCarousel.css.map */
