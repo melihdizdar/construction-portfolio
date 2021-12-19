@@ -28,31 +28,7 @@ export default class MainCarousel extends Component {
                   <i class="fas fa-angle-right"></i>
               </button>
           )
-      }
-      renderIndicator={(onClickHandler, isSelected, index, label) => {
-        if (isSelected) {
-            return (
-                <li
-                    className="indicators-active"
-                    aria-label={`Selected: ${label} ${index + 1}`}
-                    title={`Selected: ${label} ${index + 1}`}
-                />
-            );
-        }
-        return (
-            <li
-                className="indicators"
-                onClick={onClickHandler}
-                onKeyDown={onClickHandler}
-                value={index}
-                key={index}
-                role="button"
-                tabIndex={0}
-                title={`${label} ${index + 1}`}
-                aria-label={`${label} ${index + 1}`}
-            />
-        );
-        }}>
+      }>
         <div>
           <img src="https://images.pexels.com/photos/374018/pexels-photo-374018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="image_1"/>
           <div className="myCarousel">
