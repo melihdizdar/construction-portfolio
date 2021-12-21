@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-.carousel-root {
+.homeCarousel .carousel-root {
   width: 100%;
   margin: 0;
   position: absolute;
@@ -7,18 +7,18 @@
   z-index: 0;
 }
 
-.carousel-root .carousel .slide {
-  height: 768px;
+.homeCarousel .carousel-root .carousel .slide {
+  height: 900px;
 }
 
-.carousel-root .carousel .slide img {
+.homeCarousel .carousel-root .carousel .slide img {
   width: 100%;
-  height: 768px;
+  height: 900px;
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
 }
 
-.carousel-root .carousel .slide .myCarousel {
+.homeCarousel .carousel-root .carousel .slide .myCarousel {
   margin-top: -50%;
   width: 100%;
   margin-left: auto;
@@ -30,7 +30,7 @@
   position: relative;
 }
 
-.carousel-root .carousel .slide .myCarousel .lineStage {
+.homeCarousel .carousel-root .carousel .slide .myCarousel .lineStage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,12 +43,12 @@
   margin-bottom: 5%;
 }
 
-.carousel-root .carousel .slide .myCarousel .lineStage .line {
+.homeCarousel .carousel-root .carousel .slide .myCarousel .lineStage .line {
   width: 25%;
   border-bottom: 4px solid #ff3838;
 }
 
-.carousel-root .carousel .slide .myCarousel h3 {
+.homeCarousel .carousel-root .carousel .slide .myCarousel h3 {
   color: white;
   font-weight: 100;
   letter-spacing: 0.2px;
@@ -59,7 +59,7 @@
   margin-bottom: 2%;
 }
 
-.carousel-root .carousel .slide .myCarousel p {
+.homeCarousel .carousel-root .carousel .slide .myCarousel p {
   font-weight: 100;
   line-height: 29px;
   color: white;
@@ -68,7 +68,7 @@
   max-height: 67px;
 }
 
-.carousel-root .carousel .slide .myCarousel .carouselCardStage {
+.homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,7 +81,7 @@
   margin-top: 5%;
 }
 
-.carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+.homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
   width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,7 +102,7 @@
   cursor: default;
 }
 
-.carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard .left {
+.homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard .left {
   -webkit-box-flex: 80%;
       -ms-flex: 80%;
           flex: 80%;
@@ -122,15 +122,15 @@
   margin-left: 10%;
 }
 
-.carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard .left .topText {
+.homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard .left .topText {
   font-size: 1.5rem;
 }
 
-.carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard .left .bottomText {
+.homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard .left .bottomText {
   font-size: 0.9rem;
 }
 
-.carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard .right {
+.homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard .right {
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
           flex: 20%;
@@ -138,20 +138,20 @@
   font-size: 2rem;
 }
 
-.carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard:hover {
+.homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard:hover {
   background-color: #ff3838;
   color: white;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.carousel-root .carousel .control-dots {
+.homeCarousel .carousel-root .carousel .control-dots {
   padding-left: 5px;
   outline: 0;
   bottom: 30%;
 }
 
-.carousel-root .carousel .leftarrow {
+.homeCarousel .carousel-root .carousel .leftarrow {
   position: absolute;
   z-index: 2;
   top: 45%;
@@ -165,11 +165,11 @@
   color: #ff3838;
 }
 
-.carousel-root .carousel .leftarrow:hover {
+.homeCarousel .carousel-root .carousel .leftarrow:hover {
   opacity: 0.8;
 }
 
-.carousel-root .carousel .rightarrow {
+.homeCarousel .carousel-root .carousel .rightarrow {
   position: absolute;
   z-index: 2;
   top: 45%;
@@ -183,95 +183,141 @@
   color: #ff3838;
 }
 
-.carousel-root .carousel .rightarrow:hover {
+.homeCarousel .carousel-root .carousel .rightarrow:hover {
   opacity: 0.8;
 }
 
 @media screen and (max-width: 1920px) {
-  .carousel-root .carousel .slide {
-    height: 1080px;
+  .homeCarousel .carousel-root .carousel .slide {
+    height: 1440px;
   }
-  .carousel-root .carousel .slide img {
-    height: 1080px;
+  .homeCarousel .carousel-root .carousel .slide img {
+    height: 1440px;
   }
-  .carousel-root .carousel .slide .myCarousel {
-    margin-top: -45%;
+  .homeCarousel .carousel-root .carousel .slide .myCarousel {
+    margin-top: -55%;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
     width: 20%;
+    margin: 2rem;
   }
 }
 
 @media screen and (max-width: 1440px) {
-  .carousel-root .carousel .slide {
-    height: 900px;
+  .homeCarousel .carousel-root .carousel .slide {
+    height: 1200px;
   }
-  .carousel-root .carousel .slide img {
-    height: 900px;
+  .homeCarousel .carousel-root .carousel .slide img {
+    height: 1200px;
   }
-  .carousel-root .carousel .slide .myCarousel {
-    margin-top: -45%;
+  .homeCarousel .carousel-root .carousel .slide .myCarousel {
+    margin-top: -60%;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
-    width: 25%;
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+    width: 20%;
+    margin: 2rem;
   }
 }
 
 @media screen and (max-width: 1366px) {
-  .carousel-root .carousel .slide .myCarousel {
-    margin-top: -50%;
+  .homeCarousel .carousel-root .carousel .slide {
+    height: 1200px;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+  .homeCarousel .carousel-root .carousel .slide img {
+    height: 1200px;
+  }
+  .homeCarousel .carousel-root .carousel .slide .myCarousel {
+    margin-top: -60%;
+  }
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
     width: 20%;
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .homeCarousel .carousel-root .carousel .slide {
+    height: 1200px;
+  }
+  .homeCarousel .carousel-root .carousel .slide img {
+    height: 1200px;
+  }
+  .homeCarousel .carousel-root .carousel .slide .myCarousel {
+    margin-top: -65%;
+  }
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+    width: 20%;
+    margin: 2rem;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .carousel-root .carousel .slide {
+  .homeCarousel .carousel-root .carousel .slide {
     height: 768px;
   }
-  .carousel-root .carousel .slide img {
+  .homeCarousel .carousel-root .carousel .slide img {
     height: 768px;
   }
-  .carousel-root .carousel .slide .myCarousel {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel {
     margin-top: -55%;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
     width: 25%;
+    margin: 2rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .carousel-root .carousel .slide {
+  .homeCarousel .carousel-root .carousel .slide {
     height: 1024px;
   }
-  .carousel-root .carousel .slide img {
+  .homeCarousel .carousel-root .carousel .slide img {
     height: 1024px;
   }
-  .carousel-root .carousel .slide .myCarousel {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel {
     margin-top: -100%;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
     width: 33%;
     margin: 2rem;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .carousel-root .carousel .slide {
+  .homeCarousel .carousel-root .carousel .slide {
     height: 800px;
   }
-  .carousel-root .carousel .slide img {
+  .homeCarousel .carousel-root .carousel .slide img {
     height: 800px;
   }
-  .carousel-root .carousel .slide .myCarousel {
-    margin-top: -110%;
+  .homeCarousel .carousel-root .carousel .slide .myCarousel {
+    margin-top: -115%;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: vertical;
@@ -279,23 +325,23 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
     width: 45%;
     margin: 1rem;
   }
 }
 
 @media screen and (max-width: 414px) {
-  .carousel-root .carousel .slide {
+  .homeCarousel .carousel-root .carousel .slide {
     height: 736px;
   }
-  .carousel-root .carousel .slide img {
+  .homeCarousel .carousel-root .carousel .slide img {
     height: 736px;
   }
-  .carousel-root .carousel .slide .myCarousel {
-    margin-top: -150%;
+  .homeCarousel .carousel-root .carousel .slide .myCarousel {
+    margin-top: -160%;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: vertical;
@@ -303,31 +349,31 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
     width: 75%;
     margin: 1rem;
   }
-  .carousel-root .carousel .leftarrow {
+  .homeCarousel .carousel-root .carousel .leftarrow {
     left: 10px;
     font-size: 1.8rem;
   }
-  .carousel-root .carousel .rightarrow {
+  .homeCarousel .carousel-root .carousel .rightarrow {
     right: 10px;
     font-size: 1.8rem;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .carousel-root .carousel .slide {
+  .homeCarousel .carousel-root .carousel .slide {
     height: 812px;
   }
-  .carousel-root .carousel .slide img {
+  .homeCarousel .carousel-root .carousel .slide img {
     height: 812px;
   }
-  .carousel-root .carousel .slide .myCarousel {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel {
     margin-top: -190%;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: vertical;
@@ -335,31 +381,31 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
     width: 75%;
     margin: 1rem;
   }
-  .carousel-root .carousel .leftarrow {
+  .homeCarousel .carousel-root .carousel .leftarrow {
     left: 10px;
     font-size: 1.8rem;
   }
-  .carousel-root .carousel .rightarrow {
+  .homeCarousel .carousel-root .carousel .rightarrow {
     right: 10px;
     font-size: 1.8rem;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .carousel-root .carousel .slide {
+  .homeCarousel .carousel-root .carousel .slide {
     height: 812px;
   }
-  .carousel-root .carousel .slide img {
+  .homeCarousel .carousel-root .carousel .slide img {
     height: 812px;
   }
-  .carousel-root .carousel .slide .myCarousel {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel {
     margin-top: -225%;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: vertical;
@@ -368,15 +414,15 @@
             flex-direction: column;
     margin-top: 20%;
   }
-  .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
+  .homeCarousel .carousel-root .carousel .slide .myCarousel .carouselCardStage .carouselCard {
     width: 90%;
     margin: 0.5rem;
   }
-  .carousel-root .carousel .leftarrow {
+  .homeCarousel .carousel-root .carousel .leftarrow {
     left: 5px;
     font-size: 1.8rem;
   }
-  .carousel-root .carousel .rightarrow {
+  .homeCarousel .carousel-root .carousel .rightarrow {
     right: 5px;
     font-size: 1.8rem;
   }

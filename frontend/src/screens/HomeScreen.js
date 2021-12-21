@@ -25,7 +25,9 @@ export default function HomeScreen() {
     }
     return (
         <div className="home">
-            <MainCarousel/>
+            <div className="homeCarousel">
+                <MainCarousel/>
+            </div>
             <div className="prefaceStage">
                 <div className="left">
                     <div className="firstHeader">WELCOME</div>
