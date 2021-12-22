@@ -198,8 +198,6 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 2%;
-  margin-right: 2%;
 }
 
 .about .someFactsStage .content .bottom .content .someFactsCard {
@@ -216,8 +214,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%;
-  margin: 1%;
+  width: 33%;
+  margin: 0%;
 }
 
 .about .someFactsStage .content .bottom .content .someFactsCard img {
