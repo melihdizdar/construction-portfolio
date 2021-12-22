@@ -1,0 +1,312 @@
+$red_1:#ff4d4d;
+$red_2:#ff3838;
+$black_1:#4b4b4b;
+$black_2:#3d3d3d;
+$black_3:#1c1c1c;
+$grey_1:#d1ccc0;
+$white:white;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.aboutCarousel{
+    margin: 5%;
+    .carousel-root {
+        width: 100%;
+        margin: 0;
+        .carousel{
+            .slide {
+                height: 500px;
+                img {
+                    width: 100%;
+                    height: 500px;
+                    filter: brightness(50%);
+                }
+                .myCarousel {
+                    margin-top: -35%;
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-top: 6%;
+                    padding-bottom: 8%;
+                    font-family: 'Roboto', sans-serif;
+                    position: relative;
+                    .myCarouselStage{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        color: $white;
+                        .header{
+                            font-size: 2rem;
+                            margin-bottom: 2%;
+                        }
+                        .text{
+                            margin-left: 10%;
+                            margin-right: 10%;
+                            margin-bottom: 2%;
+                        }
+                        button{
+                            width: 20%;
+                            height: 40px;
+                            background-color: $red_2;
+                            color: $white;
+                            border: none;
+                        }
+                        button:hover{
+                            background-color: $black_3;
+                            color: $white;
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+            .control-dots {
+                padding-left: 5px;
+                outline: 0;
+                bottom: 5%;
+            }
+            .leftarrow{
+                position: absolute;
+                z-index: 2;
+                top: 45%;
+                width: 30;
+                height: 30;
+                cursor: pointer;
+                left: 15px;
+                border: none;
+                background: none;
+                font-size: 2rem;
+                color: $red_2;
+            }
+            .leftarrow:hover{
+                opacity: 0.8;
+            }
+            .rightarrow{
+                position: absolute;
+                z-index: 2;
+                top: 45%;
+                width: 30;
+                height: 30;
+                cursor: pointer;
+                right: 15px;
+                border: none;
+                background: none;
+                font-size: 2rem;
+                color: $red_2;
+            }
+            .rightarrow:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+}
+@media screen and (max-width:1920px){
+    .aboutCarousel{
+        .carousel-root {
+            .carousel{
+                .slide {
+                    height: 800px;
+                    img {
+                        height: 800px;
+                    }
+                    .myCarousel {
+                        margin-top: -32.5%;
+                        .myCarouselStage{
+                            button{
+                                width:15%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1440px){
+    .aboutCarousel{
+        .carousel-root {
+            .carousel{
+                .slide {
+                    height: 700px;
+                    img {
+                        height: 700px;
+                    }
+                    .myCarousel {
+                        margin-top: -40%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1366px){
+    .aboutCarousel{
+        .carousel-root {
+            .carousel{
+                .slide {
+                    height: 700px;
+                    img {
+                        height: 700px;
+                    }
+                    .myCarousel {
+                        margin-top: -42.5%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    .aboutCarousel{
+        .carousel-root {
+            .carousel{
+                .slide {
+                    height: 500px;
+                    img {
+                        height: 500px;
+                    }
+                    .myCarousel {
+                        margin-top: -42.5%;
+                        .myCarouselStage{
+                            button{
+                                width: 25%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .aboutCarousel{
+        .carousel-root {
+            .carousel{
+                .slide {
+                    height: 500px;
+                    img {
+                        height: 500px;
+                    }
+                    .myCarousel {
+                        margin-top: -55%;
+                        .myCarouselStage{
+                            .text{
+                                margin-left: 10%;
+                                margin-right: 10%;
+                            }
+                            button{
+                                width:30%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    .aboutCarousel{
+        .carousel-root {
+            .carousel{
+                .slide {
+                    height: 500px;
+                    img {
+                        height: 500px;
+                    }
+                    .myCarousel {
+                        margin-top: -80%;
+                        .myCarouselStage{
+                            .text{
+                                margin-left: 10%;
+                                margin-right: 10%;
+                            }
+                            button{
+                                width:40%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:414px){
+    .aboutCarousel{
+        .carousel-root {
+            .carousel{
+                .slide {
+                    height: 500px;
+                    img {
+                        height: 500px;
+                    }
+                    .myCarousel {
+                        margin-top: -125%;
+                        .myCarouselStage{
+                            .text{
+                                margin-left: 10%;
+                                margin-right: 10%;
+                            }
+                            button{
+                                width:60%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:375px){
+    .aboutCarousel{
+        .carousel-root {
+            .carousel{
+                .slide {
+                    height: 500px;
+                    img {
+                        height: 500px;
+                    }
+                    .myCarousel {
+                        margin-top: -150%;
+                        .myCarouselStage{
+                            .text{
+                                margin-left: 10%;
+                                margin-right: 10%;
+                            }
+                            button{
+                                width:60%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:320px){
+    .aboutCarousel{
+        .carousel-root {
+            .carousel{
+                .slide {
+                    height: 500px;
+                    img {
+                        height: 500px;
+                    }
+                    .myCarousel {
+                        margin-top: -155%;
+                        .myCarouselStage{
+                            .header{
+                                font-size: 1.5rem;
+                            }
+                            .text{
+                                margin-left: 10%;
+                                margin-right: 10%;
+                                font-size: 0.8rem;
+                            }
+                            button{
+                                width:70%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
