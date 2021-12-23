@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.home {
+  padding-bottom: 2.5rem;
+}
+
 .home .prefaceStage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 68.3%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-top: 53.1%;
 }
 
 .home .prefaceStage .left {
-  -webkit-box-flex: 60%;
-      -ms-flex: 60%;
-          flex: 60%;
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,12 +28,13 @@
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: 'Roboto', sans-serif;
-  margin-right: 5%;
   text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .home .prefaceStage .left .firstHeader {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .home .prefaceStage .left .line {
@@ -54,9 +57,9 @@
 }
 
 .home .prefaceStage .right {
-  -webkit-box-flex: 40%;
-      -ms-flex: 40%;
-          flex: 40%;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,7 +73,8 @@
 
 .home .prefaceStage .right img {
   width: 100%;
-  height: 600px;
+  height: 40vh;
+  margin-right: 10%;
 }
 
 .home .prefaceStage .right img:hover {
@@ -103,7 +107,7 @@
 }
 
 .home .whatWeDoStage .firstHeader {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .home .whatWeDoStage .paragraph {
@@ -194,6 +198,20 @@
   margin-right: 50%;
 }
 
+.home .homeCardStage .homeCard .content2 .link {
+  margin-top: 1%;
+}
+
+.home .homeCardStage .homeCard .content2 .link a {
+  color: #ff3838;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.home .homeCardStage .homeCard .content2 .link a:hover {
+  opacity: 0.8;
+}
+
 .home .homeCardStage .homeCard:hover {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -217,40 +235,45 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Roboto', sans-serif;
-  background-color: #4b4b4b;
-  height: 200px;
+  width: 100%;
   margin-top: 5%;
+  background-image: url("https://images.unsplash.com/photo-1448301858776-07f780e9c9da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home .infoCardStage .infoCard {
-  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 20%;
+  margin: 0 1%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .home .infoCardStage .infoCard .left {
   -webkit-box-flex: 30%;
       -ms-flex: 30%;
           flex: 30%;
-  font-size: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 2rem;
   color: white;
+  margin-right: 2%;
 }
 
 .home .infoCardStage .infoCard .right {
@@ -264,13 +287,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-left: 5%;
 }
 
 .home .infoCardStage .infoCard .right .top {
@@ -283,216 +305,33 @@
   color: white;
 }
 
-@media screen and (max-width: 1920px) {
-  .home .prefaceStage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 70.3%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .home .prefaceStage .left {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    margin-right: 0%;
-    text-align: center;
-  }
-  .home .prefaceStage .right {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-  }
-  .home .prefaceStage .right img {
-    width: 60%;
-    height: 700px;
-    margin-top: 5%;
-  }
-  .home .whatWeDoStage .paragraph {
-    margin-left: 2%;
-    margin-right: 2%;
-    text-align: center;
-  }
-  .home .homeCardStage .homeCard {
-    width: 45%;
-  }
-  .home .infoCardStage .infoCard {
-    width: 25%;
-  }
-  .home .infoCardStage .infoCard .left {
-    -webkit-box-flex: 40%;
-        -ms-flex: 40%;
-            flex: 40%;
-  }
-  .home .infoCardStage .infoCard .right {
-    -webkit-box-flex: 60%;
-        -ms-flex: 60%;
-            flex: 60%;
-  }
-}
-
 @media screen and (max-width: 1440px) {
   .home .prefaceStage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 80.3%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .home .prefaceStage .left {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    margin-right: 0%;
-    text-align: center;
-  }
-  .home .prefaceStage .right {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-  }
-  .home .prefaceStage .right img {
-    width: 60%;
-    height: 600px;
-    margin-top: 5%;
-  }
-  .home .whatWeDoStage .paragraph {
-    margin-left: 2%;
-    margin-right: 2%;
-    text-align: center;
-  }
-  .home .homeCardStage .homeCard {
-    width: 45%;
-  }
-  .home .infoCardStage .infoCard {
-    width: 25%;
-  }
-  .home .infoCardStage .infoCard .left {
-    -webkit-box-flex: 40%;
-        -ms-flex: 40%;
-            flex: 40%;
-  }
-  .home .infoCardStage .infoCard .right {
-    -webkit-box-flex: 60%;
-        -ms-flex: 60%;
-            flex: 60%;
+    margin-top: 69.2%;
   }
 }
 
 @media screen and (max-width: 1366px) {
   .home .prefaceStage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 85.3%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    margin-top: 53.9%;
   }
-  .home .prefaceStage .left {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    margin-right: 0%;
-    text-align: center;
-  }
-  .home .prefaceStage .right {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-  }
-  .home .prefaceStage .right img {
-    width: 60%;
-    height: 600px;
-    margin-top: 5%;
-  }
-  .home .whatWeDoStage .paragraph {
-    margin-left: 2%;
-    margin-right: 2%;
-    text-align: center;
-  }
-  .home .homeCardStage .homeCard {
-    width: 45%;
-  }
-  .home .infoCardStage .infoCard {
-    width: 25%;
-  }
-  .home .infoCardStage .infoCard .left {
-    -webkit-box-flex: 40%;
-        -ms-flex: 40%;
-            flex: 40%;
-  }
-  .home .infoCardStage .infoCard .right {
-    -webkit-box-flex: 60%;
-        -ms-flex: 60%;
-            flex: 60%;
+}
+
+@media screen and (max-width: 1280px) {
+  .home .prefaceStage {
+    margin-top: 53.4%;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .home .prefaceStage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 70.3%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .home .prefaceStage .left {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    margin-right: 0%;
-    text-align: center;
-  }
-  .home .prefaceStage .right {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-  }
-  .home .prefaceStage .right img {
-    width: 80%;
-    height: 600px;
-    margin-top: 5%;
-  }
-  .home .whatWeDoStage .paragraph {
-    margin-left: 2%;
-    margin-right: 2%;
-    text-align: center;
-  }
-  .home .homeCardStage .homeCard {
-    width: 45%;
-  }
-  .home .infoCardStage .infoCard {
-    width: 25%;
-  }
-  .home .infoCardStage .infoCard .left {
-    -webkit-box-flex: 40%;
-        -ms-flex: 40%;
-            flex: 40%;
-  }
-  .home .infoCardStage .infoCard .right {
-    -webkit-box-flex: 60%;
-        -ms-flex: 60%;
-            flex: 60%;
+    margin-top: 51.5%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .home .prefaceStage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 130.3%;
+    margin-top: 67.7%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -502,48 +341,61 @@
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
-    margin-right: 0%;
-    text-align: center;
   }
   .home .prefaceStage .right {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
-  }
-  .home .prefaceStage .right img {
-    width: 40%;
-    height: 450px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 5%;
   }
-  .home .whatWeDoStage .paragraph {
-    margin-left: 2%;
-    margin-right: 2%;
-    text-align: center;
+  .home .prefaceStage .right img {
+    margin-right: 0%;
+    width: 50%;
+  }
+  .home .whatWeDoStage {
+    margin-left: 3%;
   }
   .home .homeCardStage .homeCard {
     width: 45%;
   }
   .home .infoCardStage .infoCard {
-    width: 25%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .home .infoCardStage .infoCard .left {
-    -webkit-box-flex: 40%;
-        -ms-flex: 40%;
-            flex: 40%;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
   }
   .home .infoCardStage .infoCard .right {
-    -webkit-box-flex: 60%;
-        -ms-flex: 60%;
-            flex: 60%;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .infoCardStage .infoCard .right .top {
+    font-size: 2rem;
+    color: #ff3838;
+  }
+  .home .infoCardStage .infoCard .right .bottom {
+    font-size: 0.8rem;
+    color: white;
   }
 }
 
 @media screen and (max-width: 600px) {
   .home .prefaceStage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 130.3%;
+    margin-top: 87%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -553,47 +405,62 @@
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
-    margin-right: 0%;
-    text-align: center;
   }
   .home .prefaceStage .right {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5%;
   }
   .home .prefaceStage .right img {
-    width: 60%;
-    height: 450px;
-    margin-top: 5%;
+    margin-right: 0%;
+    width: 50%;
+  }
+  .home .whatWeDoStage {
+    margin-left: 3%;
   }
   .home .homeCardStage .homeCard {
     width: 45%;
   }
-  .home .infoCardStage {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .home .infoCardStage .infoCard {
-    width: 35%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
   .home .infoCardStage .infoCard .left {
-    -webkit-box-flex: 40%;
-        -ms-flex: 40%;
-            flex: 40%;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
   }
   .home .infoCardStage .infoCard .right {
-    -webkit-box-flex: 60%;
-        -ms-flex: 60%;
-            flex: 60%;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .infoCardStage .infoCard .right .top {
+    font-size: 2rem;
+    color: #ff3838;
+  }
+  .home .infoCardStage .infoCard .right .bottom {
+    font-size: 0.8rem;
+    color: white;
   }
 }
 
 @media screen and (max-width: 414px) {
   .home .prefaceStage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 170.3%;
+    margin-top: 145%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -603,51 +470,73 @@
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
-    margin-right: 0%;
-    text-align: center;
   }
   .home .prefaceStage .left .secondHeader {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    font-size: 1.4rem;
   }
   .home .prefaceStage .right {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5%;
   }
   .home .prefaceStage .right img {
+    margin-right: 0%;
     width: 60%;
-    height: 450px;
-    margin-top: 5%;
+  }
+  .home .whatWeDoStage {
+    margin-left: 3%;
   }
   .home .homeCardStage .homeCard {
     width: 80%;
+    margin: 0%;
+    margin-bottom: 5%;
   }
   .home .infoCardStage {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .home .infoCardStage .infoCard {
-    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
   .home .infoCardStage .infoCard .left {
-    -webkit-box-flex: 40%;
-        -ms-flex: 40%;
-            flex: 40%;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
   }
   .home .infoCardStage .infoCard .right {
-    -webkit-box-flex: 60%;
-        -ms-flex: 60%;
-            flex: 60%;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .infoCardStage .infoCard .right .top {
+    font-size: 2rem;
+    color: #ff3838;
+  }
+  .home .infoCardStage .infoCard .right .bottom {
+    font-size: 0.8rem;
+    color: white;
   }
 }
 
 @media screen and (max-width: 375px) {
   .home .prefaceStage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 0.3%;
+    margin-top: 157%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -657,51 +546,67 @@
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
-    margin-right: 0%;
-    text-align: center;
   }
   .home .prefaceStage .left .secondHeader {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    font-size: 1.4rem;
   }
   .home .prefaceStage .right {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5%;
   }
   .home .prefaceStage .right img {
-    width: 60%;
-    height: 450px;
-    margin-top: 5%;
+    margin-right: 0%;
+    width: 70%;
+  }
+  .home .whatWeDoStage {
+    margin-left: 3%;
   }
   .home .homeCardStage .homeCard {
     width: 80%;
-  }
-  .home .infoCardStage {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    margin: 0%;
+    margin-bottom: 5%;
   }
   .home .infoCardStage .infoCard {
-    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
   .home .infoCardStage .infoCard .left {
-    -webkit-box-flex: 40%;
-        -ms-flex: 40%;
-            flex: 40%;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
   }
   .home .infoCardStage .infoCard .right {
-    -webkit-box-flex: 60%;
-        -ms-flex: 60%;
-            flex: 60%;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .infoCardStage .infoCard .right .top {
+    font-size: 2rem;
+    color: #ff3838;
+  }
+  .home .infoCardStage .infoCard .right .bottom {
+    font-size: 0.8rem;
+    color: white;
   }
 }
 
 @media screen and (max-width: 320px) {
   .home .prefaceStage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 0.3%;
+    margin-top: 162%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -711,73 +616,61 @@
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
-    margin-right: 0%;
-    text-align: center;
   }
   .home .prefaceStage .left .secondHeader {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    font-size: 1.4rem;
   }
   .home .prefaceStage .right {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
-  }
-  .home .prefaceStage .right img {
-    width: 60%;
-    height: 450px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 5%;
   }
-  .home .homeCardStage .homeCard {
+  .home .prefaceStage .right img {
+    margin-right: 0%;
     width: 70%;
   }
-  .home .homeCardStage .homeCard .content {
-    position: absolute;
-    margin-left: 2%;
-    display: block;
+  .home .whatWeDoStage {
+    margin-left: 3%;
   }
-  .home .homeCardStage .homeCard .content .svg {
+  .home .homeCardStage .homeCard {
+    width: 80%;
+    margin: 0%;
+    margin-bottom: 5%;
+  }
+  .home .infoCardStage .infoCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .home .infoCardStage .infoCard .left {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  .home .infoCardStage .infoCard .right {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .infoCardStage .infoCard .right .top {
     font-size: 2rem;
     color: #ff3838;
   }
-  .home .homeCardStage .homeCard .content .text {
-    font-size: 1.6rem;
-    color: white;
-    font-weight: bold;
-  }
-  .home .homeCardStage .homeCard .content2 {
-    position: absolute;
-    margin-left: 2%;
-    display: none;
-  }
-  .home .homeCardStage .homeCard .content2 .header {
-    font-size: 1.2rem;
-    color: white;
-    font-weight: bold;
-  }
-  .home .homeCardStage .homeCard .content2 .paragraph {
-    color: white;
+  .home .infoCardStage .infoCard .right .bottom {
     font-size: 0.8rem;
-    margin-top: 1%;
-    margin-right: 50%;
-  }
-  .home .infoCardStage {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: 500px;
-  }
-  .home .infoCardStage .infoCard {
-    width: 100%;
-  }
-  .home .infoCardStage .infoCard .left {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-  }
-  .home .infoCardStage .infoCard .right {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    color: white;
   }
 }
 /*# sourceMappingURL=home.css.map */

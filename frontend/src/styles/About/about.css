@@ -3,6 +3,10 @@
   background: #1c1c1c;
 }
 
+.about {
+  padding-bottom: 2.5rem;
+}
+
 .about .headerStage {
   width: 100%;
 }
@@ -18,43 +22,34 @@
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Roboto', sans-serif;
-}
-
-.about .headerStage .content .left {
-  margin-left: 2%;
-  font-size: 1.3rem;
-  color: #1c1c1c;
-  font-weight: bold;
-}
-
-.about .headerStage .content .right {
-  margin-right: 2%;
   margin-top: 1%;
 }
 
-.about .headerStage .content .right ul {
+.about .headerStage .content .left {
+  font-size: 1.3rem;
+  color: #1c1c1c;
+  font-weight: bold;
+  margin-left: 2%;
+}
+
+.about .headerStage .content .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
-  font-size: 0.9rem;
+  color: #4b4b4b;
+  margin-right: 2%;
 }
 
-.about .headerStage .content .right ul li a {
-  color: #1c1c1c;
+.about .headerStage .content .right .firstLink a {
+  color: #4b4b4b;
   text-decoration: none;
 }
 
-.about .headerStage .content .right ul li a:hover {
+.about .headerStage .content .right .firstLink a:hover {
   text-decoration: underline;
 }
 
-.about .headerStage .content .right ul li:nth-child(2) {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.about .headerStage .content .right ul li:nth-child(3) {
+.about .headerStage .content .right .secondLink {
   text-decoration: underline;
 }
 
@@ -95,9 +90,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -110,7 +105,7 @@
 }
 
 .about .prefaceStage .content .right .mainHeader {
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-bottom: 1%;
 }
 
@@ -280,9 +275,8 @@
 
 .about .ourResultsStage .left .mainHeader {
   font-size: 1.3rem;
-  font-weight: bold;
   color: #1c1c1c;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 .about .ourResultsStage .left .line {
@@ -367,7 +361,6 @@
 
 .about .workingWithUsStage .content .mainHeader {
   font-size: 1.3rem;
-  font-weight: bold;
   color: #1c1c1c;
   margin-bottom: 1%;
   margin-top: 10%;
@@ -548,7 +541,7 @@
 
 @media screen and (max-width: 1366px) {
   .about .someFactsStage .content .bottom .content .someFactsCard {
-    width: 25%;
+    width: 28%;
     margin: 2%;
   }
   .about .workingWithUsStage .content button {
@@ -558,7 +551,7 @@
 
 @media screen and (max-width: 1024px) {
   .about .someFactsStage .content .bottom .content .someFactsCard {
-    width: 25%;
+    width: 30%;
     margin: 1%;
   }
   .about .someFactsStage .content .bottom .content .someFactsCard .header {
@@ -571,7 +564,7 @@
 
 @media screen and (max-width: 768px) {
   .about .someFactsStage .content .bottom .content .someFactsCard {
-    width: 25%;
+    width: 45%;
     margin: 1%;
   }
   .about .someFactsStage .content .bottom .content .someFactsCard .header {
@@ -668,6 +661,9 @@
             align-items: center;
     margin-top: 5%;
   }
+  .about .prefaceStage .content .right .text {
+    text-align: justify;
+  }
   .about .someFactsStage .content .bottom .content .someFactsCard {
     width: 45%;
     margin: 1%;
@@ -728,13 +724,6 @@
 }
 
 @media screen and (max-width: 414px) {
-  .about .headerStage .content .left {
-    margin-left: 5%;
-  }
-  .about .headerStage .content .right {
-    margin-right: 5%;
-    margin-top: 5%;
-  }
   .about .prefaceStage .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -859,13 +848,6 @@
 }
 
 @media screen and (max-width: 375px) {
-  .about .headerStage .content .left {
-    margin-left: 5%;
-  }
-  .about .headerStage .content .right {
-    margin-right: 5%;
-    margin-top: 5%;
-  }
   .about .prefaceStage .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -990,13 +972,6 @@
 }
 
 @media screen and (max-width: 320px) {
-  .about .headerStage .content .left {
-    margin-left: 5%;
-  }
-  .about .headerStage .content .right {
-    margin-right: 5%;
-    margin-top: 5%;
-  }
   .about .prefaceStage .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

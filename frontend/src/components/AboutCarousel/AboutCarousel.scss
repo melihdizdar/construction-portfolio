@@ -63,38 +63,6 @@ $white:white;
                 outline: 0;
                 bottom: 5%;
             }
-            .leftarrow{
-                position: absolute;
-                z-index: 2;
-                top: 45%;
-                width: 30;
-                height: 30;
-                cursor: pointer;
-                left: 15px;
-                border: none;
-                background: none;
-                font-size: 2rem;
-                color: $red_2;
-            }
-            .leftarrow:hover{
-                opacity: 0.8;
-            }
-            .rightarrow{
-                position: absolute;
-                z-index: 2;
-                top: 45%;
-                width: 30;
-                height: 30;
-                cursor: pointer;
-                right: 15px;
-                border: none;
-                background: none;
-                font-size: 2rem;
-                color: $red_2;
-            }
-            .rightarrow:hover{
-                opacity: 0.8;
-            }
         }
     }
 }
@@ -212,7 +180,7 @@ $white:white;
                         height: 500px;
                     }
                     .myCarousel {
-                        margin-top: -80%;
+                        margin-top: -75%;
                         .myCarouselStage{
                             .text{
                                 margin-left: 10%;
@@ -264,7 +232,7 @@ $white:white;
                         height: 500px;
                     }
                     .myCarousel {
-                        margin-top: -150%;
+                        margin-top: -135%;
                         .myCarouselStage{
                             .text{
                                 margin-left: 10%;
@@ -285,9 +253,39 @@ $white:white;
         .carousel-root {
             .carousel{
                 .slide {
-                    height: 500px;
+                    height: 568px;
                     img {
-                        height: 500px;
+                        height: 568px;
+                    }
+                    .myCarousel {
+                        margin-top: -155%;
+                        .myCarouselStage{
+                            .header{
+                                font-size: 1.5rem;
+                            }
+                            .text{
+                                margin-left: 10%;
+                                margin-right: 10%;
+                                font-size: 0.8rem;
+                            }
+                            button{
+                                width:70%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:280px){
+    .aboutCarousel{
+        .carousel-root {
+            .carousel{
+                .slide {
+                    height: 400px;
+                    img {
+                        height: 400px;
                     }
                     .myCarousel {
                         margin-top: -155%;

@@ -15,29 +15,24 @@ $white:white;
         z-index: 0;
         .carousel{
             .slide {
-                height: 900px;
+                height: 1024px;
                 img {
                     width: 100%;
-                    height: 900px;
+                    height: 1024px;
                     filter: brightness(50%);
                 }
                 .myCarousel {
-                    margin-top: -50%;
+                    margin-top: -30%;
                     width: 100%;
-                    margin-left: auto;
-                    margin-right: auto;
-                    padding-top: 6%;
-                    padding-bottom: 8%;
-                    height: 900px;
                     font-family: 'Roboto', sans-serif;
                     position: relative;
                     .lineStage{
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        margin-bottom: 5%;
+                        margin-bottom: 1%;
                         .line{
-                            width: 25%;
+                            width: 20%;
                             border-bottom: 4px solid $red_2;
                         }
                     }
@@ -49,7 +44,7 @@ $white:white;
                         font-weight: 600;
                         text-transform: uppercase;
                         font-size: 2rem;
-                        margin-bottom: 2%;
+                        margin-bottom: 1%;
                     }
                     p {
                         font-weight: 100 ;
@@ -63,9 +58,9 @@ $white:white;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        margin-top: 5%;
+                        margin-top: 3%;
                         .carouselCard{
-                            width: 30%;
+                            width: 20%;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
@@ -144,103 +139,24 @@ $white:white;
         }
     }
 }
-@media screen and (max-width:1920px){
+@media screen and (max-width:1440px){//height:900px
     .homeCarousel{
         .carousel-root {
             .carousel{
                 .slide {
-                    height: 1440px;
+                    height: 900px;
                     img {
-                        height: 1440px;
+                        height: 900px;
                     }
                     .myCarousel {
-                        margin-top: -55%;
-                        .carouselCardStage{
-                            flex-wrap: wrap;
-                            .carouselCard{
-                                width: 20%;
-                                margin: 2rem;
-                            }
-                        }
+                        margin-top: -40%;
                     }
                 }
             }
         }
     }
 }
-@media screen and (max-width:1440px){
-    .homeCarousel{
-        .carousel-root {
-            .carousel{
-                .slide {
-                    height: 1200px;
-                    img {
-                        height: 1200px;
-                    }
-                    .myCarousel {
-                        margin-top: -60%;
-                        .carouselCardStage{
-                            flex-wrap: wrap;
-                            .carouselCard{
-                                width: 20%;
-                                margin: 2rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width:1366px){
-    .homeCarousel{
-        .carousel-root {
-            .carousel{
-                .slide {
-                    height: 1200px;
-                    img {
-                        height: 1200px;
-                    }
-                    .myCarousel {
-                        margin-top: -60%;
-                        .carouselCardStage{
-                            flex-wrap: wrap;
-                            .carouselCard{
-                                width: 20%;
-                                margin: 2rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width:1280px){
-    .homeCarousel{
-        .carousel-root {
-            .carousel{
-                .slide {
-                    height: 1200px;
-                    img {
-                        height: 1200px;
-                    }
-                    .myCarousel {
-                        margin-top: -65%;
-                        .carouselCardStage{
-                            flex-wrap: wrap;
-                            .carouselCard{
-                                width: 20%;
-                                margin: 2rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width:1024px){
+@media screen and (max-width:1366px){//height:768px
     .homeCarousel{
         .carousel-root {
             .carousel{
@@ -250,12 +166,44 @@ $white:white;
                         height: 768px;
                     }
                     .myCarousel {
-                        margin-top: -55%;
+                        margin-top: -35%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1280px){//height:720px
+    .homeCarousel{
+        .carousel-root {
+            .carousel{
+                .slide {
+                    height: 720px;
+                    img {
+                        height: 720px;
+                    }
+                    .myCarousel {
+                        margin-top: -35%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px){//height:576px
+    .homeCarousel{
+        .carousel-root {
+            .carousel{
+                .slide {
+                    height: 576px;
+                    img {
+                        height: 576px;
+                    }
+                    .myCarousel {
+                        margin-top: -35%;
                         .carouselCardStage{
-                            flex-wrap: wrap;
                             .carouselCard{
                                 width: 25%;
-                                margin: 2rem;
                             }
                         }
                     }
@@ -269,17 +217,15 @@ $white:white;
         .carousel-root {
             .carousel{
                 .slide {
-                    height: 1024px;
+                    height: 576px;
                     img {
-                        height: 1024px;
+                        height: 576px;
                     }
                     .myCarousel {
-                        margin-top: -100%;
+                        margin-top: -45%;
                         .carouselCardStage{
-                            flex-wrap: wrap;
                             .carouselCard{
-                                width: 33%;
-                                margin: 2rem;
+                                width: 30%;
                             }
                         }
                     }
@@ -293,18 +239,17 @@ $white:white;
         .carousel-root {
             .carousel{
                 .slide {
-                    height: 800px;
+                    height: 576px;
                     img {
-                        height: 800px;
+                        height: 576px;
                     }
                     .myCarousel {
-                        margin-top: -115%;
+                        margin-top: -70%;
                         .carouselCardStage{
                             flex-wrap: wrap;
-                            flex-direction: column;
                             .carouselCard{
-                                width: 45%;
-                                margin: 1rem;
+                                width: 40%;
+                                margin: 1%;
                             }
                         }
                     }
@@ -318,29 +263,25 @@ $white:white;
         .carousel-root {
             .carousel{
                 .slide {
-                    height: 736px;
+                    height: 650px;
                     img {
-                        height: 736px;
+                        height: 650px;
                     }
                     .myCarousel {
-                        margin-top: -160%;
+                        margin-top: -130%;
+                        h3{
+                            margin-left: 5%;
+                            margin-right: 5%;
+                        }
                         .carouselCardStage{
-                            flex-wrap: wrap;
                             flex-direction: column;
+                            flex-wrap: wrap;
                             .carouselCard{
-                                width: 75%;
-                                margin: 1rem;
+                                width: 60%;
+                                margin: 1%;
                             }
                         }
                     }
-                }
-                .leftarrow{
-                    left: 10px;
-                    font-size: 1.8rem;
-                }
-                .rightarrow{
-                    right: 10px;
-                    font-size: 1.8rem;
                 }
             }
         }
@@ -351,29 +292,25 @@ $white:white;
         .carousel-root {
             .carousel{
                 .slide {
-                    height: 812px;
+                    height: 650px;
                     img {
-                        height: 812px;
+                        height: 650px;
                     }
                     .myCarousel {
-                        margin-top: -190%;
+                        margin-top: -140%;
+                        h3{
+                            margin-left: 5%;
+                            margin-right: 5%;
+                        }
                         .carouselCardStage{
-                            flex-wrap: wrap;
                             flex-direction: column;
+                            flex-wrap: wrap;
                             .carouselCard{
-                                width: 75%;
-                                margin: 1rem;
+                                width: 60%;
+                                margin: 1%;
                             }
                         }
                     }
-                }
-                .leftarrow{
-                    left: 10px;
-                    font-size: 1.8rem;
-                }
-                .rightarrow{
-                    right: 10px;
-                    font-size: 1.8rem;
                 }
             }
         }
@@ -384,30 +321,24 @@ $white:white;
         .carousel-root {
             .carousel{
                 .slide {
-                    height: 812px;
+                    height: 568px;
                     img {
-                        height: 812px;
+                        height: 568px;
                     }
                     .myCarousel {
-                        margin-top: -225%;
+                        margin-top: -150%;
+                        h3{
+                            font-size: 1.1rem;
+                        }
                         .carouselCardStage{
-                            flex-wrap: wrap;
                             flex-direction: column;
-                            margin-top: 20%;
+                            flex-wrap: wrap;
                             .carouselCard{
-                                width: 90%;
-                                margin: 0.5rem;
+                                width: 70%;
+                                margin: 1%;
                             }
                         }
                     }
-                }
-                .leftarrow{
-                    left: 5px;
-                    font-size: 1.8rem;
-                }
-                .rightarrow{
-                    right: 5px;
-                    font-size: 1.8rem;
                 }
             }
         }

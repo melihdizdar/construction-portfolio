@@ -79,42 +79,6 @@
   bottom: 5%;
 }
 
-.aboutCarousel .carousel-root .carousel .leftarrow {
-  position: absolute;
-  z-index: 2;
-  top: 45%;
-  width: 30;
-  height: 30;
-  cursor: pointer;
-  left: 15px;
-  border: none;
-  background: none;
-  font-size: 2rem;
-  color: #ff3838;
-}
-
-.aboutCarousel .carousel-root .carousel .leftarrow:hover {
-  opacity: 0.8;
-}
-
-.aboutCarousel .carousel-root .carousel .rightarrow {
-  position: absolute;
-  z-index: 2;
-  top: 45%;
-  width: 30;
-  height: 30;
-  cursor: pointer;
-  right: 15px;
-  border: none;
-  background: none;
-  font-size: 2rem;
-  color: #ff3838;
-}
-
-.aboutCarousel .carousel-root .carousel .rightarrow:hover {
-  opacity: 0.8;
-}
-
 @media screen and (max-width: 1920px) {
   .aboutCarousel .carousel-root .carousel .slide {
     height: 800px;
@@ -196,7 +160,7 @@
     height: 500px;
   }
   .aboutCarousel .carousel-root .carousel .slide .myCarousel {
-    margin-top: -80%;
+    margin-top: -75%;
   }
   .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage .text {
     margin-left: 10%;
@@ -234,7 +198,7 @@
     height: 500px;
   }
   .aboutCarousel .carousel-root .carousel .slide .myCarousel {
-    margin-top: -150%;
+    margin-top: -135%;
   }
   .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage .text {
     margin-left: 10%;
@@ -247,10 +211,33 @@
 
 @media screen and (max-width: 320px) {
   .aboutCarousel .carousel-root .carousel .slide {
-    height: 500px;
+    height: 568px;
   }
   .aboutCarousel .carousel-root .carousel .slide img {
-    height: 500px;
+    height: 568px;
+  }
+  .aboutCarousel .carousel-root .carousel .slide .myCarousel {
+    margin-top: -155%;
+  }
+  .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage .header {
+    font-size: 1.5rem;
+  }
+  .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage .text {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.8rem;
+  }
+  .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage button {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .aboutCarousel .carousel-root .carousel .slide {
+    height: 400px;
+  }
+  .aboutCarousel .carousel-root .carousel .slide img {
+    height: 400px;
   }
   .aboutCarousel .carousel-root .carousel .slide .myCarousel {
     margin-top: -155%;

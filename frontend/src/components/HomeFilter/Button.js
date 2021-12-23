@@ -42,7 +42,7 @@ const ButtonsStyled = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     margin: 1rem auto;
 `;
 export default Button;

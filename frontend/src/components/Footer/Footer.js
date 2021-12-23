@@ -11,29 +11,29 @@ export default function Footer() {
                     <div className="footerCard">
                         <div className="left"><i class="fas fa-map-marker-alt"></i></div>
                         <div className="right">
-                            <div className="top">Visit Our Company at</div>
-                            <div className="bottom">4578 Marmora Road, Glasgow</div>
+                            <div className="top">Şirketimizi ziyaret edin</div>
+                            <div className="bottom">34160 Marmara Caddesi, Turkey</div>
                         </div>
                     </div>
                     <div className="footerCard">
                         <div className="left"><i class="fas fa-mobile-alt"></i></div>
                         <div className="right">
-                            <div className="top">Have a Questions? Call us</div>
-                            <div className="bottom">+7-495-1234567</div>
+                            <div className="top">Sorunuz mu var? Bizi arayın!</div>
+                            <div className="bottom">+90-123-4567890</div>
                         </div>
                     </div>
                     <div className="footerCard">
                         <div className="left"><i class="far fa-clock"></i></div>
                         <div className="right">
-                            <div className="top">Working Time</div>
-                            <div className="bottom">Mon–Sat: 08:00–18:00</div>
+                            <div className="top">Çalışma Saatleri</div>
+                            <div className="bottom">Pzt–Cmt: 08:00–18:00</div>
                         </div>
                     </div>
                     <div className="footerCard">
                         <div className="left"><i class="far fa-envelope"></i></div>
                         <div className="right">
-                            <div className="top">Contact with Us</div>
-                            <div className="bottom"><a href="mailto:info@demolink.org">info@demolink.org</a></div>
+                            <div className="top">Bizimle iletişime geç</div>
+                            <div className="bottom"><a href="mailto:info@company.com">info@company.com</a></div>
                         </div>
                     </div>
                 </div>

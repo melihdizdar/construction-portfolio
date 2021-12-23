@@ -7,23 +7,23 @@ $grey_1:#d1ccc0;
 $white:white;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .home{
+    padding-bottom: 2.5rem;
     .prefaceStage{
         display: flex;
-        //margin-top: 63.3%;
-        margin-top: 68.3%;
-        margin-left: 5%;
-        margin-right: 5%;
+        //margin-top: 48.1%;
+        margin-top: 53.1%;
         .left{
-            flex: 60%;
+            flex: 70%;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             font-family: 'Roboto', sans-serif;
-            margin-right: 5%;
             text-align: center;
+            margin-left: 5%;
+            margin-right: 5%;
             .firstHeader{
-                font-size: 1.3rem;
+                font-size: 1.5rem;
             }
             .line{
                 border-bottom: 2px solid $red_2;
@@ -43,13 +43,14 @@ $white:white;
             }
         }
         .right{
-            flex: 40%;
+            flex:30%;
             display: flex;
             justify-content: center;
             align-items: center;
             img{
                 width: 100%;
-                height: 600px;
+                height: 40vh;
+                margin-right: 10%;
             }
             img:hover{
                 opacity: 1;
@@ -70,7 +71,7 @@ $white:white;
             margin-bottom: 1%;
         }
         .firstHeader{
-            font-size: 1.3rem;
+            font-size: 1.5rem;
         }
         .paragraph{
             color: $black_1;
@@ -130,6 +131,17 @@ $white:white;
                     margin-top: 1%;
                     margin-right: 50%;
                 }
+                .link{
+                    margin-top: 1%;
+                    a{
+                        color: $red_2;
+                        font-size: 1rem;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        opacity: 0.8;
+                    }
+                }
             }
         }
         .homeCard:hover{
@@ -146,30 +158,35 @@ $white:white;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'Roboto', sans-serif;
-        background-color: $black_1;
-        height: 200px;
+        width: 100%;
         margin-top: 5%;
+        background-image: url("https://images.unsplash.com/photo-1448301858776-07f780e9c9da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         .infoCard{
-            width: 20%;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 20%;
+            margin: 0 1%;
+            margin-top: 5%;
+            margin-bottom: 5%;
             .left{
                 flex: 30%;
-                font-size: 2.5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: $white;
-            }
-            .right{
-                flex:70%;
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-start;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
+                color: $white;
+                margin-right: 2%;
+            }
+            .right{
+                flex: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 align-items: flex-start;
-                margin-left: 5%;
                 .top{
                     font-size: 2rem;
                     color: $red_2;
@@ -182,217 +199,60 @@ $white:white;
         }
     }
 }
-@media screen and (max-width:1920px){
+@media screen and (max-width:1440px){//height:900px
     .home{
         .prefaceStage{
-            display: flex;
-            //margin-top: 63.3%;
-            margin-top: 70.3%;
-            flex-direction: row;
-            .left{
-                flex: 100%;
-                margin-right: 0%;
-                text-align: center;
-            }
-            .right{
-                flex: 100%;
-                img{
-                    width: 60%;
-                    height: 700px;
-                    margin-top: 5%;
-                }
-            }
-        }
-        .whatWeDoStage{
-            .paragraph{
-                margin-left: 2%;
-                margin-right: 2%;
-                text-align: center;
-            }
-        }
-        .homeCardStage{
-            .homeCard{
-                width: 45%;
-            }
-        }
-        .infoCardStage{
-            .infoCard{
-                width: 25%;
-                .left{
-                    flex: 40%;
-                }
-                .right{
-                    flex:60%;
-                }
-            }
+            //margin-top: 64.2%;
+            margin-top: 69.2%;
         }
     }
 }
-@media screen and (max-width:1440px){
+@media screen and (max-width:1366px){//height:768px
     .home{
         .prefaceStage{
-            display: flex;
-            //margin-top: 63.3%;
-            margin-top: 80.3%;
-            flex-direction: row;
-            .left{
-                flex: 100%;
-                margin-right: 0%;
-                text-align: center;
-            }
-            .right{
-                flex: 100%;
-                img{
-                    width: 60%;
-                    height: 600px;
-                    margin-top: 5%;
-                }
-            }
-        }
-        .whatWeDoStage{
-            .paragraph{
-                margin-left: 2%;
-                margin-right: 2%;
-                text-align: center;
-            }
-        }
-        .homeCardStage{
-            .homeCard{
-                width: 45%;
-            }
-        }
-        .infoCardStage{
-            .infoCard{
-                width: 25%;
-                .left{
-                    flex: 40%;
-                }
-                .right{
-                    flex:60%;
-                }
-            }
+            //margin-top: 48.9%;
+            margin-top: 53.9%;
         }
     }
 }
-@media screen and (max-width:1366px){
+@media screen and (max-width:1280px){//height:720px
     .home{
         .prefaceStage{
-            display: flex;
-            //margin-top: 63.3%;
-            margin-top: 85.3%;
-            flex-direction: row;
-            .left{
-                flex: 100%;
-                margin-right: 0%;
-                text-align: center;
-            }
-            .right{
-                flex: 100%;
-                img{
-                    width: 60%;
-                    height: 600px;
-                    margin-top: 5%;
-                }
-            }
-        }
-        .whatWeDoStage{
-            .paragraph{
-                margin-left: 2%;
-                margin-right: 2%;
-                text-align: center;
-            }
-        }
-        .homeCardStage{
-            .homeCard{
-                width: 45%;
-            }
-        }
-        .infoCardStage{
-            .infoCard{
-                width: 25%;
-                .left{
-                    flex: 40%;
-                }
-                .right{
-                    flex:60%;
-                }
-            }
+            //margin-top: 48.4%;
+            margin-top: 53.4%;
         }
     }
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1024px){//height:576px
     .home{
         .prefaceStage{
-            display: flex;
-            //margin-top: 63.3%;
-            margin-top: 70.3%;
-            flex-direction: row;
-            .left{
-                flex: 100%;
-                margin-right: 0%;
-                text-align: center;
-            }
-            .right{
-                flex: 100%;
-                img{
-                    width: 80%;
-                    height: 600px;
-                    margin-top: 5%;
-                }
-            }
-        }
-        .whatWeDoStage{
-            .paragraph{
-                margin-left: 2%;
-                margin-right: 2%;
-                text-align: center;
-            }
-        }
-        .homeCardStage{
-            .homeCard{
-                width: 45%;
-            }
-        }
-        .infoCardStage{
-            .infoCard{
-                width: 25%;
-                .left{
-                    flex: 40%;
-                }
-                .right{
-                    flex:60%;
-                }
-            }
+            //margin-top: 46.5%;
+            margin-top: 51.5%;
         }
     }
 }
 @media screen and (max-width:768px){
     .home{
         .prefaceStage{
-            display: flex;
-            //margin-top: 63.3%;
-            margin-top: 130.3%;
+            //margin-top: 62.7%;
+            margin-top: 67.7%;
             flex-direction: column;
             .left{
                 flex: 100%;
-                margin-right: 0%;
-                text-align: center;
             }
             .right{
                 flex: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5%;
                 img{
-                    width: 40%;
-                    height: 450px;
-                    margin-top: 5%;
+                    margin-right: 0%;
+                    width: 50%;
                 }
             }
         }
         .whatWeDoStage{
-            .paragraph{
-                margin-left: 2%;
-                margin-right: 2%;
-                text-align: center;
-            }
+            margin-left: 3%;
         }
         .homeCardStage{
             .homeCard{
@@ -401,38 +261,48 @@ $white:white;
         }
         .infoCardStage{
             .infoCard{
-                width: 25%;
+                flex-direction: column;
                 .left{
-                    flex: 40%;
+                    flex: 100%;
                 }
                 .right{
-                    flex:60%;
+                    flex: 100%;
+                    align-items: center;
+                    .top{
+                        font-size: 2rem;
+                        color: $red_2;
+                    }
+                    .bottom{
+                        font-size: 0.8rem;
+                        color: $white;
+                    }
                 }
             }
         }
     }
 }
-
 @media screen and (max-width:600px){
     .home{
         .prefaceStage{
-            display: flex;
-            //margin-top: 63.3%;
-            margin-top: 130.3%;
+            //margin-top: 82%;
+            margin-top: 87%;
             flex-direction: column;
             .left{
                 flex: 100%;
-                margin-right: 0%;
-                text-align: center;
             }
             .right{
                 flex: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5%;
                 img{
-                    width: 60%;
-                    height: 450px;
-                    margin-top: 5%;
+                    margin-right: 0%;
+                    width: 50%;
                 }
             }
+        }
+        .whatWeDoStage{
+            margin-left: 3%;
         }
         .homeCardStage{
             .homeCard{
@@ -440,14 +310,23 @@ $white:white;
             }
         }
         .infoCardStage{
-            flex-wrap: wrap;
             .infoCard{
-                width: 35%;
+                flex-direction: column;
+                text-align: center;
                 .left{
-                    flex: 40%;
+                    flex: 100%;
                 }
                 .right{
-                    flex:60%;
+                    flex: 100%;
+                    align-items: center;
+                    .top{
+                        font-size: 2rem;
+                        color: $red_2;
+                    }
+                    .bottom{
+                        font-size: 0.8rem;
+                        color: $white;
+                    }
                 }
             }
         }
@@ -456,42 +335,55 @@ $white:white;
 @media screen and (max-width:414px){
     .home{
         .prefaceStage{
-            display: flex;
-            //margin-top: 63.3%;
-            margin-top: 170.3%;
+            //margin-top: 140%;
+            margin-top: 145%;
             flex-direction: column;
             .left{
                 flex: 100%;
-                margin-right: 0%;
-                text-align: center;
                 .secondHeader{
-                    margin-top: 5%;
-                    margin-bottom: 5%;
+                    font-size: 1.4rem;
                 }
             }
             .right{
                 flex: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5%;
                 img{
+                    margin-right: 0%;
                     width: 60%;
-                    height: 450px;
-                    margin-top: 5%;
                 }
             }
+        }
+        .whatWeDoStage{
+            margin-left: 3%;
         }
         .homeCardStage{
             .homeCard{
                 width: 80%;
+                margin: 0%;
+                margin-bottom: 5%;
             }
         }
         .infoCardStage{
-            flex-wrap: wrap;
+            flex-direction: column;
             .infoCard{
-                width: 50%;
+                flex-direction: column;
+                text-align: center;
                 .left{
-                    flex: 40%;
+                    flex: 100%;
                 }
                 .right{
-                    flex:60%;
+                    flex: 100%;
+                    align-items: center;
+                    .top{
+                        font-size: 2rem;
+                        color: $red_2;
+                    }
+                    .bottom{
+                        font-size: 0.8rem;
+                        color: $white;
+                    }
                 }
             }
         }
@@ -500,42 +392,54 @@ $white:white;
 @media screen and (max-width:375px){
     .home{
         .prefaceStage{
-            display: flex;
-            //margin-top: 63.3%;
-            margin-top: 0.3%;
+            //margin-top: 152%;
+            margin-top: 157%;
             flex-direction: column;
             .left{
                 flex: 100%;
-                margin-right: 0%;
-                text-align: center;
                 .secondHeader{
-                    margin-top: 5%;
-                    margin-bottom: 5%;
+                    font-size: 1.4rem;
                 }
             }
             .right{
                 flex: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5%;
                 img{
-                    width: 60%;
-                    height: 450px;
-                    margin-top: 5%;
+                    margin-right: 0%;
+                    width: 70%;
                 }
             }
+        }
+        .whatWeDoStage{
+            margin-left: 3%;
         }
         .homeCardStage{
             .homeCard{
                 width: 80%;
+                margin: 0%;
+                margin-bottom: 5%;
             }
         }
         .infoCardStage{
-            flex-wrap: wrap;
             .infoCard{
-                width: 50%;
+                flex-direction: column;
+                text-align: center;
                 .left{
-                    flex: 40%;
+                    flex: 100%;
                 }
                 .right{
-                    flex:60%;
+                    flex: 100%;
+                    align-items: center;
+                    .top{
+                        font-size: 2rem;
+                        color: $red_2;
+                    }
+                    .bottom{
+                        font-size: 0.8rem;
+                        color: $white;
+                    }
                 }
             }
         }
@@ -544,73 +448,54 @@ $white:white;
 @media screen and (max-width:320px){
     .home{
         .prefaceStage{
-            display: flex;
-            //margin-top: 63.3%;
-            margin-top: 0.3%;
+            //margin-top: 152%;
+            margin-top: 162%;
             flex-direction: column;
             .left{
                 flex: 100%;
-                margin-right: 0%;
-                text-align: center;
                 .secondHeader{
-                    margin-top: 5%;
-                    margin-bottom: 5%;
+                    font-size: 1.4rem;
                 }
             }
             .right{
                 flex: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5%;
                 img{
-                    width: 60%;
-                    height: 450px;
-                    margin-top: 5%;
+                    margin-right: 0%;
+                    width: 70%;
                 }
             }
+        }
+        .whatWeDoStage{
+            margin-left: 3%;
         }
         .homeCardStage{
             .homeCard{
-                width: 70%;
-                .content{
-                    position:absolute;
-                    margin-left: 2%;
-                    display: block;
-                    .svg{
-                        font-size: 2rem;
-                        color: $red_2;
-                    }
-                    .text{
-                        font-size: 1.6rem;
-                        color: $white;
-                        font-weight: bold;
-                    }
-                }
-                .content2{
-                    position:absolute;
-                    margin-left: 2%;
-                    display: none;
-                    .header{
-                        font-size: 1.2rem;
-                        color: $white;
-                        font-weight: bold;
-                    }
-                    .paragraph{
-                        color: $white;
-                        font-size: 0.8rem;
-                        margin-top: 1%;
-                        margin-right: 50%;
-                    }
-                }
+                width: 80%;
+                margin: 0%;
+                margin-bottom: 5%;
             }
         }
         .infoCardStage{
-            flex-wrap: wrap;
-            height: 500px;
             .infoCard{
-                width: 100%;
+                flex-direction: column;
+                text-align: center;
                 .left{
-                    flex: 50%;
+                    flex: 100%;
                 }
                 .right{
-                    flex: 50%;
+                    flex: 100%;
+                    align-items: center;
+                    .top{
+                        font-size: 2rem;
+                        color: $red_2;
+                    }
+                    .bottom{
+                        font-size: 0.8rem;
+                        color: $white;
+                    }
                 }
             }
         }

@@ -6,7 +6,7 @@ import AboutScreen from "./screens/AboutScreen";
 
 function App() {
   return (
-    <div>
+    <div className="app">
         <BrowserRouter>
             <Navbar/>
             <main>
