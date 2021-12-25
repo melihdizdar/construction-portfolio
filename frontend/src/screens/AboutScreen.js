@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import AboutCarousel from "../components/AboutCarousel/AboutCarousel"
-import "../components/NavBar/SubNavbar.css";
 
 export default function AboutScreen() {
     return (

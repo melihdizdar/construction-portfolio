@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /src/assets/*.png
+/src/assets/colorPalette.css
+/src/assets/colorPalette.css.map
+/src/assets/colorPalette.scss
