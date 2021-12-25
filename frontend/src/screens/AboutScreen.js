@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import AboutCarousel from "../components/AboutCarousel/AboutCarousel"
+import AboutTestimonials from '../components/AboutTestimonials/AboutTestimonials';
 
 export default function AboutScreen() {
     return (
@@ -135,6 +136,13 @@ export default function AboutScreen() {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="testimonialsHeaderStage">
+                    <div className="mainHeader">KADROMUZUN YORUMLARI</div>
+                    <div className="line"/>
+                </div>
+                <div className="aboutTestimonials">
+                    <AboutTestimonials/>
                 </div>
             </div>
         </AboutScreenStyled>
@@ -473,6 +481,22 @@ const AboutScreenStyled = styled.div`
             }
         }
     }
+    .testimonialsHeaderStage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        .mainHeader{
+            font-size: 1.3rem;
+            color: #1c1c1c;
+            margin-bottom: 1%;
+        }
+        .line{
+            width: 15%;
+            border-bottom: 3px solid #ff3838;
+            margin-bottom: 1%;
+        }
+    }
 }
 @media screen and (max-width:1920px){
     .about{
@@ -631,6 +655,9 @@ const AboutScreenStyled = styled.div`
                 }
             }
         }
+        .testimonialsHeaderStage{
+            margin-bottom:5%;
+        }
     }
 }
 @media screen and (max-width:600px){
@@ -706,6 +733,9 @@ const AboutScreenStyled = styled.div`
                     width: 30%;
                 }
             }
+        }
+        .testimonialsHeaderStage{
+            margin-bottom:5%;
         }
     }
 }
@@ -805,6 +835,9 @@ const AboutScreenStyled = styled.div`
                 }
             }
         }
+        .testimonialsHeaderStage{
+            margin-bottom:5%;
+        }
     }
 }
 @media screen and (max-width:375px){
@@ -903,6 +936,9 @@ const AboutScreenStyled = styled.div`
                 }
             }
         }
+        .testimonialsHeaderStage{
+            margin-bottom:5%;
+        }
     }
 }
 @media screen and (max-width:320px){
@@ -1000,6 +1036,9 @@ const AboutScreenStyled = styled.div`
                     }
                 }
             }
+        }
+        .testimonialsHeaderStage{
+            margin-bottom:5%;
         }
     }
 }
