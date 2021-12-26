@@ -3,16 +3,64 @@ import { Link } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import styled from 'styled-components';
+import { useLocation } from "react-router"
+import { useMediaQuery } from 'react-responsive'
 
 function Navbar() {
 const [click, setClick] = useState(false);
 const handleClick = () => setClick(!click);
 const closeMobileMenu = () => setClick(false);
 
+const [navBg, setNavBg] = React.useState("none");
+const location = useLocation();
+React.useEffect(() => {
+    if (window.location.pathname === "/about") {
+        setNavBg("#1c1c1c");
+    }else if(window.location.pathname === "/services"){
+        setNavBg("#1c1c1c");
+    }else if(window.location.pathname === "/projects"){
+        setNavBg("#1c1c1c");
+    }else if(window.location.pathname === "/contact"){
+        setNavBg("#1c1c1c");
+    }
+    else {
+        setNavBg('none')
+    }
+}, [location]);
+
+const isiPadScreen = useMediaQuery({ query: '(max-width: 768px)' })
+const isDefaultScreen = useMediaQuery({ query: '(min-width: 769px)' })
 return (
     <NavBarStyled>
-        <>
-            <nav className='navbar'>
+            {isDefaultScreen && (
+                <nav className='navbar' style={{ background: navBg }}>
+                    <NavLink exact to="/" className="nav-logo">
+                        <img src={logo} className="logo" alt="logo"></img>
+                    </NavLink>
+                    <div className='menu-icon' onClick={handleClick}>
+                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                    </div>
+                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                        <li className='nav-item'>
+                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>HOME</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>ABOUT</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>SERVICES</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>PROJECTS</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>CONTACT US</Link>
+                        </li>
+                    </ul>
+                </nav>
+            )}
+            {isiPadScreen && (
+            <nav className='navbar' style={{ backgroundColor: "#1c1c1c" }}>
                 <NavLink exact to="/" className="nav-logo">
                     <img src={logo} className="logo" alt="logo"></img>
                 </NavLink>
@@ -37,7 +85,7 @@ return (
                     </li>
                 </ul>
             </nav>
-        </>
+            )}
     </NavBarStyled>
 );
 }
@@ -54,7 +102,7 @@ const NavBarStyled = styled.div`
     font-size: 1.2rem;
     top: 0;
     z-index: 1;
-    background:#1c1c1c;
+    background:none;
 }
 .nav-container {
     display: flex;
@@ -116,6 +164,9 @@ img:hover{
     display: none;
 }
 @media screen and (max-width: 768px) {
+    .navbar{
+        background:#1c1c1c;
+    }
     .fa-bars {
         color: #ff3838;
         font-size: 3rem;
