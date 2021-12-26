@@ -42,19 +42,19 @@ return (
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>HOME</Link>
+                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>ANASAYFA</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>ABOUT</Link>
+                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>HAKKIMIZDA</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>SERVICES</Link>
+                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>SERVİSLER</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>PROJECTS</Link>
+                            <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>PROJELER</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>CONTACT US</Link>
+                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>İLETİŞİM</Link>
                         </li>
                     </ul>
                 </nav>
@@ -69,19 +69,19 @@ return (
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>HOME</Link>
+                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>ANASAYFA</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/about' className='nav-links' onClick={closeMobileMenu}>ABOUT</Link>
+                        <Link to='/about' className='nav-links' onClick={closeMobileMenu}>HAKKIMIZDA</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>SERVICES</Link>
+                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>SERVİSLER</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>PROJECTS</Link>
+                        <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>PROJELER</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>CONTACT US</Link>
+                        <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>İLETİŞİM</Link>
                     </li>
                 </ul>
             </nav>

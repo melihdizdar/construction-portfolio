@@ -10,9 +10,9 @@ export default function ServicesScreen() {
             <div className="services">
                 <div className="headerStage">
                     <div className="content">
-                        <div className="left">SERVICES</div>
+                        <div className="left">SERVİSLER</div>
                         <div className="right">
-                            <div className="firstLink"><Link to="/">HOME</Link></div>&nbsp;/&nbsp;<div className="secondLink">SERVICES</div>
+                            <div className="firstLink"><Link to="/">ANASAYFA</Link></div>&nbsp;/&nbsp;<div className="secondLink">SERVİSLER</div>
                         </div>
                     </div>
                 </div>

@@ -10,9 +10,9 @@ export default function ContactScreen() {
             <div className="contact">
                 <div className="headerStage">
                     <div className="content">
-                        <div className="left">CONTACT US</div>
+                        <div className="left">İLETİŞİM</div>
                         <div className="right">
-                            <div className="firstLink"><Link to="/">HOME</Link></div>&nbsp;/&nbsp;<div className="secondLink">CONTACT US</div>
+                            <div className="firstLink"><Link to="/">ANASAYFA</Link></div>&nbsp;/&nbsp;<div className="secondLink">İLETİŞİM</div>
                         </div>
                     </div>
                 </div>

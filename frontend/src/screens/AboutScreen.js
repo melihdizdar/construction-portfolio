@@ -10,9 +10,9 @@ export default function AboutScreen() {
             <div className="about">
                 <div className="headerStage">
                     <div className="content">
-                        <div className="left">ABOUT</div>
+                        <div className="left">HAKKIMIZDA</div>
                         <div className="right">
-                            <div className="firstLink"><Link to="/">HOME</Link></div>&nbsp;/&nbsp;<div className="secondLink">ABOUT</div>
+                            <div className="firstLink"><Link to="/">ANASAYFA</Link></div>&nbsp;/&nbsp;<div className="secondLink">HAKKIMIZDA</div>
                         </div>
                     </div>
                 </div>
