@@ -17,6 +17,7 @@ function Menu({menuItem}) {
                             </div>
                             <div className="contentStage">
                                 <small>{item.text}</small>
+                                <div className="status">{item.status}</div>
                                 <Link to={item.link}>Daha Fazla</Link>
                             </div>
                         </div>
@@ -63,6 +64,10 @@ const MenuItemStyled = styled.div`
                 justify-content:flex-start;
                 align-items:flex-start;
                 flex-direction:column;
+                .status{
+                    font-size:0.9rem;
+                    margin-top:2%;
+                }
                 small{
                     color:#3E414A;
                     font-size:0.8rem;
