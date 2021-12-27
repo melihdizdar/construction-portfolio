@@ -5,6 +5,7 @@ import HomeScreen from "./screens/HomeScreen";
 import AboutScreen from "./screens/AboutScreen";
 import ContactScreen from "./screens/ContactScreen";
 import ServicesScreen from "./screens/ServicesScreen";
+import ProjectsScreen from "./screens/ProjectsScreen";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
                     <Route path="/about" element={<AboutScreen/>}/>
                     <Route path="/contact" element={<ContactScreen/>}/>
                     <Route path="/services" element={<ServicesScreen/>}/>
+                    <Route path="/projects" element={<ProjectsScreen/>}/>
                 </Routes>
             </main>
             <Footer/>

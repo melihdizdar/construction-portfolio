@@ -40,7 +40,7 @@ export default function Footer() {
             </div>
             <div className="footerBottom">
                 <div className="content">
-                    <div className="left">Copyright © 2021 All rights reserved.</div>
+                    <div className="left">Copyright © 2021 Bütün hakları saklıdır.</div>
                     <div className="right">
                         <Link to="/"><img src={logo} className="logo" alt="logo"></img></Link>
                     </div>
