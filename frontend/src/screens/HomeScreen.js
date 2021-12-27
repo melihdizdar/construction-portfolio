@@ -81,7 +81,13 @@ export default function HomeScreen() {
                     <MainLayout>
                         <InnerLayout>
                             <Button filter={filter} button={button} />
-                            <Menu menuItem={menuItem} />
+                            <div className="scroll-bg">
+                                <div className="scroll-div">
+                                    <div className="scroll-object">
+                                        <Menu menuItem={menuItem} />
+                                    </div>
+                                </div>
+                            </div>
                         </InnerLayout>
                     </MainLayout>
                 </div>
@@ -281,6 +287,21 @@ const HomeScreenStyled = styled.div`
                     font-size: 0.8rem;
                     color: white;
                 }
+            }
+        }
+    }
+    .scroll-bg{
+        background: none;
+        width: 100%;
+        .scroll-div{
+            width: 100%;
+            background: none;
+            overflow: hidden;
+            overflow-y: scroll;
+            height: 115vh;
+            .scroll-object{
+                color: black;
+                font-size: 15px;
             }
         }
     }
