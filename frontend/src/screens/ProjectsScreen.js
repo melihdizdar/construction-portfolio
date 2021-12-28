@@ -4,23 +4,23 @@ import styled from 'styled-components';
 import Button from '../components/ProjectFilter/Button';
 import { InnerLayout, MainLayout } from '../components/ProjectFilter/Layouts';
 import Menu from '../components/ProjectFilter/Menu';
-import data from '../data/data';
+import projectsData from '../data/projectsData';
 
-const allButtons = ['TÜMÜ', ...new Set(data.map(item => item.category))]
+const allButtons = ['TÜMÜ', ...new Set(projectsData.map(item => item.category))]
 
 export default function ProjectsScreen() {
-    const [menuItem, setMenuItems] = useState(data);
+    const [menuItem, setMenuItems] = useState(projectsData);
     // eslint-disable-next-line no-unused-vars
     const [button, setButtons] = useState(allButtons);
 
     const filter = (button) => {
 
         if(button === 'TÜMÜ'){
-            setMenuItems(data);
+            setMenuItems(projectsData);
             return;
         }
 
-        const filteredData = data.filter(item => item.category === button);
+        const filteredData = projectsData.filter(item => item.category === button);
         setMenuItems(filteredData);
     }
     return (

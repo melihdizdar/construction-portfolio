@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import ServicesCard from '../components/ServicesCard/ServicesCard';
+import ServicesCard from '../components/ServicesCards/ServicesCards';
 import ServicesTestimonials from '../components/ServicesTestimonials/ServicesTestimonials';
+import servicesData from '../data/servicesData';
 
 export default function ServicesScreen() {
     return (
@@ -21,7 +22,11 @@ export default function ServicesScreen() {
                     <div className="line"/>
                     <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus vel urna at euismod. Morbi eleifend lectus a sodales gravida. Morbi tincidunt iaculis libero, non scelerisque neque euismod eu. Pellentesque luctus est a odio ultricies pellentesque.</div>
                 </div>
-                <ServicesCard/>
+                <div className="ServicesCardStage">
+                    {servicesData.map((servicesCard) => (
+                        <ServicesCard key={servicesCard._id} servicesCard={servicesCard}></ServicesCard>
+                    ))}
+                </div>
                 <div className="testimonialsHeaderStage">
                     <div className="firstHeader">SİZİN YORUMLARINIZ</div>
                     <div className="line"/>
@@ -97,6 +102,56 @@ const ServicesScreenStyled = styled.div`
             text-align:center;
         }
     }
+    .ServicesCardStage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        .servicesCard{
+            width: 30%;
+            margin: 1%;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            img{
+                width: 100%;
+                height: 300px;
+                position:relative;
+                filter: brightness(30%);
+            }
+            img:hover{
+                opacity: 1;
+            }
+            .content{
+                position:absolute;
+                margin-left: 2%;
+                display: block;
+                .svg{
+                    font-size: 3rem;
+                    color: #ff3838;
+                }
+                .text{
+                    font-size: 1.8rem;
+                    color: white;
+                    font-weight: bold;
+                }
+                .link{
+                    margin-top: 1%;
+                    a{
+                        color: #ff3838;
+                        font-size: 1rem;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
     .testimonialsHeaderStage{
         display:flex;
         justift-content:center;
@@ -153,6 +208,11 @@ const ServicesScreenStyled = styled.div`
                 width:17.5%;
             }
         }
+        .ServicesCardStage{
+            .servicesCard{
+                width: 45%;
+            }
+        }
         .testimonialsHeaderStage{
             .line{
                 width:30%;
@@ -165,6 +225,11 @@ const ServicesScreenStyled = styled.div`
         .prefaceStage{
             .line{
                 width:22.5%;
+            }
+        }
+        .ServicesCardStage{
+            .servicesCard{
+                width: 45%;
             }
         }
         .testimonialsHeaderStage{
@@ -181,6 +246,13 @@ const ServicesScreenStyled = styled.div`
                 width:35%;
             }
         }
+        .ServicesCardStage{
+            .servicesCard{
+                width: 80%;
+                margin: 0%;
+                margin-bottom: 5%;
+            }
+        }
         .testimonialsHeaderStage{
             .line{
                 width:55%;
@@ -195,6 +267,13 @@ const ServicesScreenStyled = styled.div`
                 width:37.5%;
             }
         }
+        .ServicesCardStage{
+            .servicesCard{
+                width: 80%;
+                margin: 0%;
+                margin-bottom: 5%;
+            }
+        }
         .testimonialsHeaderStage{
             .line{
                 width:57.5%;
@@ -207,6 +286,13 @@ const ServicesScreenStyled = styled.div`
         .prefaceStage{
             .line{
                 width:40%;
+            }
+        }
+        .ServicesCardStage{
+            .servicesCard{
+                width: 80%;
+                margin: 0%;
+                margin-bottom: 5%;
             }
         }
         .testimonialsHeaderStage{

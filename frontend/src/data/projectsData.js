@@ -1,4 +1,4 @@
-const homeFilter = [
+const projectsData = [
     {
         id: 1,
         category: 'TAMAMLANAN PROJELER',
@@ -55,4 +55,4 @@ const homeFilter = [
     },
 ]
 
-export default homeFilter;
+export default projectsData;

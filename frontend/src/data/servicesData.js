@@ -1,0 +1,58 @@
+const servicesData = [
+    {
+        id: 1,
+        name: 'YAPI',
+        subName: 'DANIŞMAN',
+        link: '/counselor',
+        svg:'fas fa-user',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet malesuada lectus, a pulvinar odio.',
+        image: "https://images.pexels.com/photos/159375/construction-site-build-construction-work-159375.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    },
+    {
+        id: 2,
+        name: 'EV',
+        subName: 'YENİLEME',
+        link: '/renovation',
+        svg:'fas fa-home',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet malesuada lectus, a pulvinar odio.',
+        image: "https://images.pexels.com/photos/4161619/pexels-photo-4161619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    },
+    {
+        id: 3,
+        name: 'MİMARİ',
+        subName: 'BİNA YAPIMI',
+        link: '/building',
+        svg:'fas fa-building',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet malesuada lectus, a pulvinar odio.',
+        image: "https://images.pexels.com/photos/8961065/pexels-photo-8961065.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    },
+    {
+        id: 4,
+        name: 'İÇ MEKAN',
+        subName: 'TASARIM',
+        link: '/interior',
+        svg:'fas fa-ruler-combined',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet malesuada lectus, a pulvinar odio.',
+        image: "https://images.pexels.com/photos/4170184/pexels-photo-4170184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    },
+    {
+        id: 5,
+        name: 'YAPI',
+        subName: 'MÜHENDİSLİĞİ',
+        link: '/engineering',
+        svg:'fas fa-hard-hat',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet malesuada lectus, a pulvinar odio.',
+        image: "https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    },
+    {
+        id: 6,
+        name: 'ÖN İNŞAAT',
+        subName: 'PLANLAMA',
+        link: '/planning',
+        svg:'fas fa-pencil-ruler',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet malesuada lectus, a pulvinar odio.',
+        image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    },
+]
+
+export default servicesData;

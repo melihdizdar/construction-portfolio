@@ -1,27 +1,28 @@
 import React, { useState } from 'react';
 import MainCarousel from "../components/MainCarousel/MainCarousel"
-import data from '../data/data';
+import projectsData from '../data/projectsData';
 import { MainLayout, InnerLayout } from '../components/ProjectFilter/Layouts';
 import Menu from '../components/ProjectFilter/Menu';
 import Button from '../components/ProjectFilter/Button';
 import styled from 'styled-components';
 import HomeCards from '../components/HomeCards/HomeCards';
+import servicesData from '../data/servicesData';
 
-const allButtons = ['TÜMÜ', ...new Set(data.map(item => item.category))]
+const allButtons = ['TÜMÜ', ...new Set(projectsData.map(item => item.category))]
 
 export default function HomeScreen() {
-    const [menuItem, setMenuItems] = useState(data);
+    const [menuItem, setMenuItems] = useState(projectsData);
     // eslint-disable-next-line no-unused-vars
     const [button, setButtons] = useState(allButtons);
 
     const filter = (button) => {
 
         if(button === 'TÜMÜ'){
-            setMenuItems(data);
+            setMenuItems(projectsData);
             return;
         }
 
-        const filteredData = data.filter(item => item.category === button);
+        const filteredData = projectsData.filter(item => item.category === button);
         setMenuItems(filteredData);
     }
     return (
@@ -46,7 +47,11 @@ export default function HomeScreen() {
                     <div className="line"/>
                     <div className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet malesuada lectus, a pulvinar odio. Mauris auctor quis nulla eget viverra.</div>
                 </div>
-                <HomeCards/>
+                <div className="homeCardStage">
+                    {servicesData.map((homeCard) => (
+                        <HomeCards key={homeCard._id} homeCard={homeCard}></HomeCards>
+                    ))}
+                </div>
                 <div className="infoCardStage">
                     <div className="infoCard">
                         <div className="left"><i class="fas fa-home"></i></div>
@@ -197,6 +202,7 @@ const HomeScreenStyled = styled.div`
                 position:absolute;
                 margin-left: 2%;
                 display: block;
+                width:30%;
                 .svg{
                     font-size: 3rem;
                     color: #ff3838;
@@ -212,6 +218,7 @@ const HomeScreenStyled = styled.div`
                 margin-left: 2%;
                 display: none;
                 cursor: default;
+                width:30%;
                 .header{
                     font-size: 1.5rem;
                     color: white;
@@ -221,7 +228,7 @@ const HomeScreenStyled = styled.div`
                     color: white;
                     font-size: 0.8rem;
                     margin-top: 1%;
-                    margin-right: 50%;
+                    margin-right: 10%;
                 }
                 .link{
                     margin-top: 1%;

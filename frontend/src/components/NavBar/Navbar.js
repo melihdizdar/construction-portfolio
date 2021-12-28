@@ -22,6 +22,36 @@ React.useEffect(() => {
         setNavBg("#1c1c1c");
     }else if(window.location.pathname === "/contact"){
         setNavBg("#1c1c1c");
+    }else if(window.location.pathname === "/counselor"){
+        setNavBg("#1c1c1c");
+    }else if(window.location.pathname === "/renovation"){
+        setNavBg("#1c1c1c");
+    }else if(window.location.pathname === "/building"){
+        setNavBg("#1c1c1c");
+    }else if(window.location.pathname === "/interior"){
+        setNavBg("#1c1c1c");
+    }else if(window.location.pathname === "/engineering"){
+        setNavBg("#1c1c1c");
+    }else if(window.location.pathname === "/planning"){
+        setNavBg("#1c1c1c");
+    }
+    else if(window.location.pathname === "/istanbul"){
+        setNavBg("#1c1c1c");
+    }
+    else if(window.location.pathname === "/sakarya"){
+        setNavBg("#1c1c1c");
+    }
+    else if(window.location.pathname === "/izmir"){
+        setNavBg("#1c1c1c");
+    }
+    else if(window.location.pathname === "/kocaeli"){
+        setNavBg("#1c1c1c");
+    }
+    else if(window.location.pathname === "/antalya"){
+        setNavBg("#1c1c1c");
+    }
+    else if(window.location.pathname === "/mugla"){
+        setNavBg("#1c1c1c");
     }
     else {
         setNavBg('none')
