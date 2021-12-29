@@ -6,12 +6,12 @@ import AboutScreen from "./screens/AboutScreen";
 import ContactScreen from "./screens/ContactScreen";
 import ServicesScreen from "./screens/ServicesScreen";
 import ProjectsScreen from "./screens/ProjectsScreen";
-import ConsultantScreen from "./screens/ConsultantScreen";
-import RenovationScreen from "./screens/RenovationScreen";
-import BuildingScreen from "./screens/BuildingScreen";
-import InteriorScreen from "./screens/InteriorScreen";
-import EngineeringScreen from "./screens/EngineeringScreen";
-import PlanningScreen from "./screens/PlanningScreen";
+import ConsultantScreen from "./screens/services/ConsultantScreen";
+import RenovationScreen from "./screens/services/RenovationScreen";
+import BuildingScreen from "./screens/services/BuildingScreen";
+import InteriorScreen from "./screens/services/InteriorScreen";
+import EngineeringScreen from "./screens/services/EngineeringScreen";
+import PlanningScreen from "./screens/services/PlanningScreen";
 
 function App() {
   return (
