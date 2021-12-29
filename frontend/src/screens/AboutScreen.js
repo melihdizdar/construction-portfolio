@@ -741,6 +741,21 @@ const AboutScreenStyled = styled.div`
 }
 @media screen and (max-width:414px){
     .about{
+        .headerStage{
+            width: 100%;
+            margin-bottom:3%;
+            .content{
+                justify-content: center;
+                align-items: center;
+                flex-wrap:wrap;
+                .left{
+                    margin-left: 0%;
+                }
+                .right{
+                    font-size:1rem;
+                }
+            }
+        }
         .prefaceStage{
             .content{
                 flex-direction: column;

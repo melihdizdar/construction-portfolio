@@ -23,7 +23,7 @@ export default function PlanningScreen() {
     ];
     return (
         <PlanningScreenStyled>
-            <div className="consultant">
+            <div className="planning">
                 <div className="headerStage">
                     <div className="content">
                         <div className="left">ÖN İNŞAAT PLANLAMA</div>
@@ -91,7 +91,7 @@ export default function PlanningScreen() {
                         </div>
                         <div className="subHeader">Hizmete Genel Bakış</div>
                         <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non tellus tincidunt, pulvinar nisl non, dictum lectus. Duis et efficitur nisi. Integer auctor purus cursus, consectetur purus et, ullamcorper purus. Nulla in vestibulum est. Mauris interdum finibus massa a fringilla. Donec blandit massa et dictum varius. Aenean nisl turpis, tempus pulvinar nisl laoreet, elementum ullamcorper est. Aenean vitae tristique tortor. Suspendisse potenti. Aliquam dictum mattis vulputate. Donec accumsan dictum enim vitae dignissim. Fusce gravida et turpis in luctus.</div>
-                        <div className="consultantCarousel">
+                        <div className="planningCarousel">
                             <Carousel
                                 showArrows={true}
                                 infiniteLoop={true}
@@ -189,7 +189,7 @@ export default function PlanningScreen() {
 }
 const PlanningScreenStyled = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-.consultant{
+.planning{
     padding-bottom: 2.5rem;
     font-family: 'Roboto', sans-serif;
     .headerStage{
@@ -303,7 +303,7 @@ const PlanningScreenStyled = styled.div`
                 margin-bottom:2%;
                 margin-top:2%;
             }
-            .consultantCarousel{
+            .planningCarousel{
                 margin-right:2%;
                 .carousel{
                     width:100%;
@@ -481,10 +481,10 @@ const PlanningScreenStyled = styled.div`
     }
 }
 @media screen and (min-width: 1024px){
-    .consultant{
+    .planning{
         .contentStage{
             .right{
-                .consultantCarousel{
+                .planningCarousel{
                     margin-right:2%;
                     .carousel{
                         width:100%;
@@ -509,7 +509,7 @@ const PlanningScreenStyled = styled.div`
     }
 }
 @media screen and (max-width:768px){
-    .consultant{
+    .planning{
         .contentStage{
             flex-direction:column;
             .left{
@@ -522,7 +522,7 @@ const PlanningScreenStyled = styled.div`
                 }
             }
             .right{
-                .consultantCarousel{
+                .planningCarousel{
                     margin-right:2%;
                     .carousel{
                         width:100%;
@@ -547,7 +547,7 @@ const PlanningScreenStyled = styled.div`
     }
 }
 @media screen and (max-width:600px){
-    .consultant{
+    .planning{
         .contentStage{
             flex-direction:column;
             .left{
@@ -560,7 +560,7 @@ const PlanningScreenStyled = styled.div`
                 }
             }
             .right{
-                .consultantCarousel{
+                .planningCarousel{
                     margin-right:2%;
                     .carousel{
                         width:100%;
@@ -585,7 +585,7 @@ const PlanningScreenStyled = styled.div`
     }
 }
 @media screen and (max-width:414px){
-    .consultant{
+    .planning{
         .headerStage{
             width: 100%;
             margin-bottom:3%;
@@ -622,7 +622,7 @@ const PlanningScreenStyled = styled.div`
                 .text{
                     font-size:0.9rem;
                 }
-                .consultantCarousel{
+                .planningCarousel{
                     margin-right:2%;
                     .carousel{
                         width:100%;
@@ -652,7 +652,7 @@ const PlanningScreenStyled = styled.div`
     }
 }
 @media screen and (max-width:375px){
-    .consultant{
+    .planning{
         .headerStage{
             width: 100%;
             margin-bottom:3%;
@@ -677,7 +677,7 @@ const PlanningScreenStyled = styled.div`
                 }
             }
             .right{
-                .consultantCarousel{
+                .planningCarousel{
                     margin-right:2%;
                     .carousel{
                         width:100%;
@@ -707,7 +707,7 @@ const PlanningScreenStyled = styled.div`
     }
 }
 @media screen and (max-width:320px){
-    .consultant{
+    .planning{
         .headerStage{
             width: 100%;
             margin-bottom:3%;
@@ -732,7 +732,7 @@ const PlanningScreenStyled = styled.div`
                 }
             }
             .right{
-                .consultantCarousel{
+                .planningCarousel{
                     margin-right:2%;
                     .carousel{
                         width:100%;
