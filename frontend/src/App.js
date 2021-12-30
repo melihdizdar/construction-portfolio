@@ -12,6 +12,12 @@ import BuildingScreen from "./screens/services/BuildingScreen";
 import InteriorScreen from "./screens/services/InteriorScreen";
 import EngineeringScreen from "./screens/services/EngineeringScreen";
 import PlanningScreen from "./screens/services/PlanningScreen";
+import IstanbulScreen from "./screens/projects/IstanbulScreen";
+import SakaryaScreen from "./screens/projects/SakaryaScreen";
+import IzmirScreen from "./screens/projects/IzmirScreen";
+import KocaeliScreen from "./screens/projects/KocaeliScreen";
+import AntalyaScreen from "./screens/projects/AntalyaScreen";
+import MuglaScreen from "./screens/projects/MuglaScreen";
 
 function App() {
   return (
@@ -31,6 +37,12 @@ function App() {
                     <Route path="/interior" element={<InteriorScreen/>}/>
                     <Route path="/engineering" element={<EngineeringScreen/>}/>
                     <Route path="/planning" element={<PlanningScreen/>}/>
+                    <Route path="/istanbul" element={<IstanbulScreen/>}/>
+                    <Route path="/sakarya" element={<SakaryaScreen/>}/>
+                    <Route path="/izmir" element={<IzmirScreen/>}/>
+                    <Route path="/kocaeli" element={<KocaeliScreen/>}/>
+                    <Route path="/antalya" element={<AntalyaScreen/>}/>
+                    <Route path="/mugla" element={<MuglaScreen/>}/>
                 </Routes>
             </main>
             <Footer/>
