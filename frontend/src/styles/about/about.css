@@ -385,8 +385,20 @@
   text-align: center;
 }
 
-.about .workingWithUsStage .content button {
-  width: 20%;
+.about .workingWithUsStage .content .buttonStage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .workingWithUsStage .content .buttonStage a button {
+  width: 100%;
   border: none;
   background-color: #ff3838;
   color: white;
@@ -394,7 +406,7 @@
   height: 50px;
 }
 
-.about .workingWithUsStage .content button:hover {
+.about .workingWithUsStage .content .buttonStage a button:hover {
   background-color: #1c1c1c;
   color: white;
 }
@@ -548,9 +560,6 @@
     width: 25%;
     margin: 2%;
   }
-  .about .workingWithUsStage .content button {
-    width: 15%;
-  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -558,18 +567,12 @@
     width: 25%;
     margin: 2%;
   }
-  .about .workingWithUsStage .content button {
-    width: 15%;
-  }
 }
 
 @media screen and (max-width: 1366px) {
   .about .someFactsStage .content .bottom .content .someFactsCard {
     width: 28%;
     margin: 2%;
-  }
-  .about .workingWithUsStage .content button {
-    width: 15%;
   }
 }
 
@@ -580,9 +583,6 @@
   }
   .about .someFactsStage .content .bottom .content .someFactsCard .header {
     font-size: 1.1rem;
-  }
-  .about .workingWithUsStage .content button {
-    width: 20%;
   }
 }
 
@@ -640,9 +640,6 @@
   }
   .about .ourResultsStage .right .ourResultsCard .name {
     margin-right: 10%;
-  }
-  .about .workingWithUsStage .content button {
-    width: 25%;
   }
   .about .ourTeamStage .content .bottom .content .ourTeamCard {
     width: 45%;
@@ -745,9 +742,6 @@
   .about .ourResultsStage .right .ourResultsCard .name {
     margin-right: 5%;
   }
-  .about .workingWithUsStage .content button {
-    width: 30%;
-  }
   .about .testimonialsHeaderStage {
     margin-bottom: 5%;
   }
@@ -767,12 +761,16 @@
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .about .headerStage .content .left {
     margin-left: 0%;
   }
   .about .headerStage .content .right {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .about .prefaceStage .content {
     -webkit-box-orient: vertical;
@@ -876,9 +874,6 @@
   }
   .about .ourResultsStage .right .ourResultsCard .name {
     margin-right: 5%;
-  }
-  .about .workingWithUsStage .content button {
-    width: 50%;
   }
   .about .ourTeamStage .content .top {
     text-align: center;
@@ -1004,9 +999,6 @@
   .about .ourResultsStage .right .ourResultsCard .name {
     margin-right: 5%;
   }
-  .about .workingWithUsStage .content button {
-    width: 50%;
-  }
   .about .ourTeamStage .content .top {
     text-align: center;
   }
@@ -1130,9 +1122,6 @@
   }
   .about .ourResultsStage .right .ourResultsCard .name {
     margin-right: 5%;
-  }
-  .about .workingWithUsStage .content button {
-    width: 60%;
   }
   .about .ourTeamStage .content .top {
     text-align: center;

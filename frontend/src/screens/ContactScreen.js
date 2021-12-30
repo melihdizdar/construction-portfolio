@@ -3,8 +3,20 @@ import { Link } from 'react-router-dom';
 import { LoadScript } from "@react-google-maps/api";
 import Map from "../components/Map/Map";
 import "../styles/contact/contact.css";
+import emailjs from 'emailjs-com';
 
 export default function ContactScreen() {
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_gdw8al5', 'template_m9zd5vt', e.target, 'user_1fRQ5KP751jM7lJm6PMc7')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+            e.target.reset()
+    }
     return (
         <div className="contact">
             <div className="headerStage">
@@ -30,18 +42,18 @@ export default function ContactScreen() {
                     <div className="formInfo">
                     Ücretsiz danışmanlık istiyorsanız, lütfen formu doldurarak başlayın:
                     </div>
-                    <form className="formStage">
+                    <form className="formStage" onSubmit={sendEmail}>
                         <div className="inputStage">
                             <div className="inputName">Adı*</div>
-                            <input type="text" placeholder="Lütfen adınızı giriniz" />
+                            <input type="text" placeholder="Lütfen adınızı giriniz" name="name"/>
                         </div>
                         <div className="inputStage">
                             <div className="inputName">Telefon Numarası*</div>
-                            <input type="tel" placeholder="Lütfen telefon numaranızı giriniz" />
+                            <input type="tel" placeholder="Lütfen telefon numaranızı giriniz" name="tel"/>
                         </div>
                         <div className="inputStage">
                             <div className="inputName">Email Adresi*</div>
-                            <input type="email" placeholder="Lütfen adınızı giriniz" />
+                            <input type="email" placeholder="Lütfen emailinizi giriniz" name="email"/>
                         </div>
                         <div className="inputStage">
                             <div className="inputName">Servisinizi seçiniz*</div>

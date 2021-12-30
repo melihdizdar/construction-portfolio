@@ -92,7 +92,9 @@ export default function AboutScreen() {
                     <div className="line"/>
                     <div className="subHeader">Ağımıza katılabilirsiniz.</div>
                     <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo sodales diam quis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec consectetur, arcu vel convallis aliquam.</div>
-                    <button><i class="far fa-envelope"></i> TEKLİF GÖNDER</button>
+                    <div className="buttonStage">
+                        <Link to="/contact"><button><i class="far fa-envelope"></i> TEKLİF GÖNDER</button></Link>
+                    </div>
                 </div>
             </div>
             <div className="ourTeamStage">

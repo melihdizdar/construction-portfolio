@@ -254,12 +254,16 @@
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .services .headerStage .content .left {
     margin-left: 0%;
   }
   .services .headerStage .content .right {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   .services .prefaceStage .line {
     width: 35%;

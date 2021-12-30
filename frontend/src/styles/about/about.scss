@@ -240,17 +240,24 @@
                 margin-right: 15%;
                 text-align: center;
             }
-            button{
-                width: 20%;
-                border: none;
-                background-color: #ff3838;
-                color: white;
-                margin-bottom: 10%;
-                height: 50px;
-            }
-            button:hover{
-                background-color: #1c1c1c;
-                color: white;
+            .buttonStage{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    button{
+                        width: 100%;
+                        border: none;
+                        background-color: #ff3838;
+                        color: white;
+                        margin-bottom: 10%;
+                        height: 50px;
+                    }
+                    button:hover{
+                        background-color: #1c1c1c;
+                        color: white;
+                    }
+                }
             }
         }
     }
@@ -361,13 +368,6 @@
                 }
             }
         }
-        .workingWithUsStage{
-            .content{
-                button{
-                    width: 15%;
-                }
-            }
-        }
     }
 }
 @media screen and (max-width:1440px){
@@ -381,13 +381,6 @@
                             margin: 2%;
                         }
                     }
-                }
-            }
-        }
-        .workingWithUsStage{
-            .content{
-                button{
-                    width: 15%;
                 }
             }
         }
@@ -407,13 +400,6 @@
                 }
             }
         }
-        .workingWithUsStage{
-            .content{
-                button{
-                    width: 15%;
-                }
-            }
-        }
     }
 }
 @media screen and (max-width:1024px){
@@ -430,13 +416,6 @@
                             }
                         }
                     }
-                }
-            }
-        }
-        .workingWithUsStage{
-            .content{
-                button{
-                    width: 20%;
                 }
             }
         }
@@ -483,13 +462,6 @@
                     .name{
                         margin-right: 10%;
                     }
-                }
-            }
-        }
-        .workingWithUsStage{
-            .content{
-                button{
-                    width: 25%;
                 }
             }
         }
@@ -576,13 +548,6 @@
                 }
             }
         }
-        .workingWithUsStage{
-            .content{
-                button{
-                    width: 30%;
-                }
-            }
-        }
         .testimonialsHeaderStage{
             margin-bottom:5%;
         }
@@ -597,11 +562,12 @@
                 justify-content: center;
                 align-items: center;
                 flex-wrap:wrap;
+                flex-direction: column;
                 .left{
                     margin-left: 0%;
                 }
                 .right{
-                    font-size:1rem;
+                    font-size:0.8rem;
                 }
             }
         }
@@ -672,13 +638,6 @@
                     .name{
                         margin-right: 5%;
                     }
-                }
-            }
-        }
-        .workingWithUsStage{
-            .content{
-                button{
-                    width: 50%;
                 }
             }
         }
@@ -776,13 +735,6 @@
                 }
             }
         }
-        .workingWithUsStage{
-            .content{
-                button{
-                    width: 50%;
-                }
-            }
-        }
         .ourTeamStage{
             .content{
                 .top{
@@ -874,13 +826,6 @@
                     .name{
                         margin-right: 5%;
                     }
-                }
-            }
-        }
-        .workingWithUsStage{
-            .content{
-                button{
-                    width: 60%;
                 }
             }
         }

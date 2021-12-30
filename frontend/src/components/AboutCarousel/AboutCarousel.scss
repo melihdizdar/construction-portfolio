@@ -43,17 +43,20 @@ $white:white;
                             margin-right: 10%;
                             margin-bottom: 2%;
                         }
-                        button{
-                            width: 20%;
-                            height: 40px;
-                            background-color: $red_2;
-                            color: $white;
-                            border: none;
-                        }
-                        button:hover{
-                            background-color: $black_3;
-                            color: $white;
-                            transition: all 0.3s ease-in-out;
+                        a{
+                            width: 100%;
+                            button{
+                                width: 20%;
+                                height: 40px;
+                                background-color: $red_2;
+                                color: $white;
+                                border: none;
+                            }
+                            button:hover{
+                                background-color: $black_3;
+                                color: $white;
+                                transition: all 0.3s ease-in-out;
+                            }
                         }
                     }
                 }
@@ -160,8 +163,11 @@ $white:white;
                                 margin-left: 10%;
                                 margin-right: 10%;
                             }
-                            button{
-                                width:30%;
+                            a{
+                                width: 100%;
+                                button{
+                                    width:30%;
+                                }
                             }
                         }
                     }
@@ -186,8 +192,11 @@ $white:white;
                                 margin-left: 10%;
                                 margin-right: 10%;
                             }
-                            button{
-                                width:40%;
+                            a{
+                                width:100%;
+                                button{
+                                    width:40%;
+                                }
                             }
                         }
                     }
@@ -212,8 +221,11 @@ $white:white;
                                 margin-left: 10%;
                                 margin-right: 10%;
                             }
-                            button{
-                                width:60%;
+                            a{
+                                width: 100%;
+                                button{
+                                    width:60%;
+                                }
                             }
                         }
                     }
@@ -237,9 +249,6 @@ $white:white;
                             .text{
                                 margin-left: 10%;
                                 margin-right: 10%;
-                            }
-                            button{
-                                width:60%;
                             }
                         }
                     }

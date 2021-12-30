@@ -36,3 +36,23 @@
         }
     }
 }
+@media screen and (max-width:414px){
+    .projects{
+        .headerStage{
+            width: 100%;
+            margin-bottom:3%;
+            .content{
+                justify-content: center;
+                align-items: center;
+                flex-wrap:wrap;
+                flex-direction: column;
+                .left{
+                    margin-left: 0%;
+                }
+                .right{
+                    font-size:0.8rem;
+                }
+            }
+        }
+    }
+}

@@ -58,7 +58,11 @@
   margin-bottom: 2%;
 }
 
-.aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage button {
+.aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage a {
+  width: 100%;
+}
+
+.aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage a button {
   width: 20%;
   height: 40px;
   background-color: #ff3838;
@@ -66,7 +70,7 @@
   border: none;
 }
 
-.aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage button:hover {
+.aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage a button:hover {
   background-color: #1c1c1c;
   color: white;
   -webkit-transition: all 0.3s ease-in-out;
@@ -147,7 +151,10 @@
     margin-left: 10%;
     margin-right: 10%;
   }
-  .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage button {
+  .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage a {
+    width: 100%;
+  }
+  .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage a button {
     width: 30%;
   }
 }
@@ -166,7 +173,10 @@
     margin-left: 10%;
     margin-right: 10%;
   }
-  .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage button {
+  .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage a {
+    width: 100%;
+  }
+  .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage a button {
     width: 40%;
   }
 }
@@ -185,7 +195,10 @@
     margin-left: 10%;
     margin-right: 10%;
   }
-  .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage button {
+  .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage a {
+    width: 100%;
+  }
+  .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage a button {
     width: 60%;
   }
 }
@@ -203,9 +216,6 @@
   .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage .text {
     margin-left: 10%;
     margin-right: 10%;
-  }
-  .aboutCarousel .carousel-root .carousel .slide .myCarousel .myCarouselStage button {
-    width: 60%;
   }
 }
 
